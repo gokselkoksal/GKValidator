@@ -1,0 +1,25 @@
+{
+  "name": "GKValidator",
+  "version": "0.1.0",
+  "summary": "A short description of GKValidator.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/GKValidator",
+  "license": "MIT",
+  "authors": {
+    "Göksel Köksal": "goksel.koksal@outlook.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/GKValidator.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "GKValidator": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

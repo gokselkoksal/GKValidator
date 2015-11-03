@@ -1,0 +1,14 @@
+PODS:
+  - GKValidator (0.1.0)
+
+DEPENDENCIES:
+  - GKValidator (from `../`)
+
+EXTERNAL SOURCES:
+  GKValidator:
+    :path: ../
+
+SPEC CHECKSUMS:
+  GKValidator: 5cc7c04b12e61de4eeb81781ba9f6bbc6ca519b2
+
+COCOAPODS: 0.39.0

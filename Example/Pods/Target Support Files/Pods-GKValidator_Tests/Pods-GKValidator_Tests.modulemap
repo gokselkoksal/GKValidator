@@ -1,0 +1,6 @@
+framework module Pods_GKValidator_Tests {
+  umbrella header "Pods-GKValidator_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
