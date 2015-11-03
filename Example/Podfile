@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'GKValidator_Example', :exclusive => true do
+  pod "GKValidator", :path => "../"
+end
+
+target 'GKValidator_Tests', :exclusive => true do
+  pod "GKValidator", :path => "../"
+
+  
+end
