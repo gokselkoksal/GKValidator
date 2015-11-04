@@ -8,6 +8,8 @@
 
 import Foundation
 
+public typealias ObjectValidationResultPair = (object: AnyObject, result: ValidationResult)
+
 public protocol FormValidatorDelegate {
     
     func formValidator(formValidator: FormValidator, didChangeState state: ValidationState)
@@ -26,8 +28,8 @@ public class FormValidator : NSObject {
                 return
             }
             
-            if state.contains(ValidationState.Submittable) && !state.contains(ValidationState.Eligible) {
-                state.remove(ValidationState.Submittable)
+            if state.contains(.Submittable) && !state.contains(.Eligible) {
+                state.remove(.Submittable)
                 
             }
             
@@ -35,9 +37,10 @@ public class FormValidator : NSObject {
         }
     }
     
-    // TODO: Swift 2.0 currently does not support type covariance. Update String to AnyObject to support different types.
+    // TODO: Change FieldValidationDelegate<String> to FieldValidationDelegate<AnyObject> when Swift supports type covariance.
     public var fieldValidationDelegates: [FieldValidationDelegate<String>]? {
         didSet {
+            
             if let fieldDelegates = fieldValidationDelegates {
                 
                 NSNotificationCenter.defaultCenter().removeObserver(self,
@@ -46,7 +49,7 @@ public class FormValidator : NSObject {
                 
                 for fieldDelegate in fieldDelegates {
                     NSNotificationCenter.defaultCenter().addObserver(self,
-                        selector: Selector("fieldDidChange:"),
+                        selector: "fieldDidChange:",
                         name: FieldDidChangeNotification,
                         object: fieldDelegate)
                 }
@@ -56,12 +59,12 @@ public class FormValidator : NSObject {
     
     // MARK: Public methods
     
-    public func validatorForField(field: AnyObject?) -> FieldValidator<String>? {
+    public func fieldValidationDelegateForField(field: AnyObject) -> FieldValidationDelegate<String>? {
         
         if let fieldValidationDelegates = fieldValidationDelegates {
             for fieldDelegate in fieldValidationDelegates {
                 if field === fieldDelegate.field {
-                    return fieldDelegate.validator
+                    return fieldDelegate
                 }
             }
         }
@@ -129,7 +132,9 @@ public class FormValidator : NSObject {
         return resultPairs
     }
     
-    public func fieldDidChange(notification: NSNotification) {
+    // MARK: Private
+    
+    func fieldDidChange(notification: NSNotification) {
         
         validateForType(ValidationType.Eligibility)
     }

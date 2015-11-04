@@ -1,38 +1,12 @@
 //
-//  ValidationRule.swift
-//  EruValidator
+//  ValidationRule+String.swift
+//  Pods
 //
-//  Created by Göksel Köksal on 15/07/15.
-//  Copyright © 2015 Eru. All rights reserved.
+//  Created by Göksel Köksal on 04/11/15.
+//
 //
 
 import Foundation
-
-public typealias TextValidationRule = ValidationRule<String>
-
-public struct ValidationRule<ValidatableType> {
-    
-    public var error: ValidationError
-    private let validationBlock: (value: ValidatableType?) -> Bool
-    
-    public init(error: ValidationError = ValidationError(code: 0, localizedDescription: nil), validationBlock: (value: ValidatableType?) -> Bool) {
-        
-        self.error = error
-        self.validationBlock = validationBlock
-    }
-    
-    public func validateValue(value: ValidatableType?) -> ValidationResult {
-        
-        if validationBlock(value: value) {
-            return .Success
-        }
-        else {
-            return .Failure(errors: [error]);
-        }
-    }
-}
-
-// MARK: String validation rules
 
 public extension ValidationRule where ValidatableType: StringLiteralConvertible {
     

@@ -9,14 +9,34 @@
 import UIKit
 import GKValidator
 
+extension UITextField : ValidatableField {
+    
+    public var fieldValue: AnyObject? {
+        get {
+            return self.text
+        }
+        set {
+            self.text = newValue as? String
+        }
+    }
+    
+    public func addFieldValueChangedEventForTarget(target: AnyObject?, action: Selector) {
+        self.addTarget(target, action: action, forControlEvents: .EditingChanged)
+    }
+    
+    public func removeFieldValueChangedEventFromTarget(target: AnyObject?, action: Selector) {
+        self.removeTarget(target, action: action, forControlEvents: .EditingChanged)
+    }
+}
+
 class RegistrationFormValidator : FormValidator {
     
-    var displayNameFieldDelegate: UITextFieldValidationDelegate
-    var usernameFieldDelegate: UITextFieldValidationDelegate
-    var emailFieldDelegate: UITextFieldValidationDelegate
-    var passwordFieldDelegate: UITextFieldValidationDelegate
-    var rePasswordFieldDelegate: UITextFieldValidationDelegate
-    var mobileNumberFieldDelegate: UITextFieldValidationDelegate
+    var displayNameFieldDelegate: TextFieldValidationDelegate
+    var usernameFieldDelegate: TextFieldValidationDelegate
+    var emailFieldDelegate: TextFieldValidationDelegate
+    var passwordFieldDelegate: TextFieldValidationDelegate
+    var rePasswordFieldDelegate: TextFieldValidationDelegate
+    var mobileNumberFieldDelegate: TextFieldValidationDelegate
     var tAndCSwitch: UISwitch
     
     init(displayNameField: UITextField,
@@ -28,22 +48,22 @@ class RegistrationFormValidator : FormValidator {
         tAndCSwitch: UISwitch
         )
     {
-        self.displayNameFieldDelegate = UITextFieldValidationDelegate(
+        self.displayNameFieldDelegate = TextFieldValidationDelegate(
             field: displayNameField,
             validator: RegistrationFormValidator.displayNameFieldValidator())
-        self.usernameFieldDelegate = UITextFieldValidationDelegate(
+        self.usernameFieldDelegate = TextFieldValidationDelegate(
             field: usernameField,
             validator: RegistrationFormValidator.usernameFieldValidator())
-        self.emailFieldDelegate = UITextFieldValidationDelegate(
+        self.emailFieldDelegate = TextFieldValidationDelegate(
             field: emailField,
             validator: RegistrationFormValidator.emailFieldValidator())
-        self.passwordFieldDelegate = UITextFieldValidationDelegate(
+        self.passwordFieldDelegate = TextFieldValidationDelegate(
             field: passwordField,
             validator: RegistrationFormValidator.passwordFieldValidator())
-        self.rePasswordFieldDelegate = UITextFieldValidationDelegate(
+        self.rePasswordFieldDelegate = TextFieldValidationDelegate(
             field: rePasswordField,
             validator: RegistrationFormValidator.passwordFieldValidator())
-        self.mobileNumberFieldDelegate = UITextFieldValidationDelegate(
+        self.mobileNumberFieldDelegate = TextFieldValidationDelegate(
             field: mobileNumberField,
             validator: RegistrationFormValidator.mobileNumberFieldValidator())
         self.tAndCSwitch = tAndCSwitch

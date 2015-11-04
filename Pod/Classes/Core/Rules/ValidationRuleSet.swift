@@ -8,8 +8,6 @@
 
 import Foundation
 
-public typealias TextValidationRuleSet = ValidationRuleSet<String>
-
 public class ValidationRuleSet<ValidatableType> {
     
     public var rules: [ValidationRule<ValidatableType>] = [ValidationRule<ValidatableType>]()

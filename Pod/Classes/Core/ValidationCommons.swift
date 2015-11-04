@@ -8,15 +8,14 @@
 
 import Foundation
 
-public typealias ObjectValidationResultPair = (object: AnyObject, result: ValidationResult)
+// MARK: Typealiases
 
-public struct ErrorIdentifiers {
-    public struct Domains {
-        public static let ValidationRule = "GK.Validity.ValidationRule"
-        public static let FieldValidationDelegate = "GK.Validity.FieldValidationDelegate"
-        public static let FormValidator = "GK.Validity.FormValidator"
-    }
-}
+public typealias TextValidationRule = ValidationRule<String>
+public typealias TextValidationRuleSet = ValidationRuleSet<String>
+public typealias TextFieldValidator = FieldValidator<String>
+public typealias TextFieldValidationDelegate = FieldValidationDelegate<String>
+
+// MARK: Enums
 
 public enum ValidationType {
     
@@ -54,30 +53,7 @@ public enum ValidationResult {
     }
 }
 
-public class ValidationError: NSError {
-    
-    convenience public init(
-        domain: String = ErrorIdentifiers.Domains.ValidationRule,
-        code: Int,
-        localizedDescription: String?,
-        userInfo dict: [NSObject: AnyObject]? = nil)
-    {
-        var userInfoDict: [NSObject: AnyObject]
-        
-        if let dict = dict {
-            userInfoDict = dict
-        }
-        else {
-            userInfoDict = [NSObject: AnyObject]()
-        }
-        
-        if let localizedDescription = localizedDescription {
-            userInfoDict[NSLocalizedDescriptionKey] = localizedDescription
-        }
-        
-        self.init(domain: domain, code: code, userInfo: userInfoDict)
-    }
-}
+// MARK: Global functions
 
 func affectedStateForValidationType(type: ValidationType) -> ValidationState {
     

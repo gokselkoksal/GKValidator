@@ -68,9 +68,9 @@ class RegistrationViewController: UIViewController, FormValidatorDelegate {
     
     func fieldDidEndEditing(textField: UITextField!) {
         
-        if let validator = self.formValidator.validatorForField(textField) {
+        if let validationDelegate = self.formValidator.fieldValidationDelegateForField(textField) {
             
-            if let lastKnownResult = validator.validationRuleSets[.Eligibility]?.lastKnownResult {
+            if let lastKnownResult = validationDelegate.validator.validationRuleSets[.Eligibility]?.lastKnownResult {
                 textField.layer.borderColor = (lastKnownResult.isSuccess ? UIColor.lightGrayColor() : UIColor.redColor()).CGColor
             }
         }

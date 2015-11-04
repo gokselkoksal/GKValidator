@@ -8,16 +8,13 @@
 
 import Foundation
 
-public typealias TextFieldValidator = FieldValidator<String>
-
 public class FieldValidator<ValidatableType> {
     
     public var inputRuleSet: ValidationRuleSet<ValidatableType> = ValidationRuleSet<ValidatableType>(rules: nil, validatesNil: true)
     public var validationRuleSets: [ValidationType: ValidationRuleSet<ValidatableType>] = [ValidationType: ValidationRuleSet<ValidatableType>]()
+    
     public var optional: Bool = false {
         didSet {
-            
-            // TODO: Not working currently.
             for type in ValidationType.allValues {
                 if let ruleSet = validationRuleSets[type] {
                     ruleSet.validatesNil = optional
@@ -38,7 +35,6 @@ public class FieldValidator<ValidatableType> {
             
             if state.contains(ValidationState.Submittable) && !state.contains(ValidationState.Eligible) {
                 self.state.remove(ValidationState.Submittable)
-                
             }
             didChangeStateBlock?(state: state);
         }
@@ -48,7 +44,7 @@ public class FieldValidator<ValidatableType> {
     
     public init() { }
     
-    // MARK: Public methods
+    // MARK: Public methods - Convenience
     
     public func addInputRules(rules: [ValidationRule<ValidatableType>]) {
         
@@ -65,6 +61,8 @@ public class FieldValidator<ValidatableType> {
         }
     }
     
+    // MARK: Public methods - Validation
+    
     public func validateInput(input: ValidatableType?) -> ValidationResult {
         
         let result = self.inputRuleSet.validateValue(input)
@@ -74,7 +72,6 @@ public class FieldValidator<ValidatableType> {
     public func validateValue(value: ValidatableType?, forType type: ValidationType) -> ValidationResult {
         
         guard let ruleSet = validationRuleSets[type] else {
-            
             return .Success
         }
         
