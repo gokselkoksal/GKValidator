@@ -8,22 +8,53 @@
 
 import Foundation
 
+/// Name of notification which is fired upon a field change.
 public let FieldDidChangeNotification: String = "FieldDidChangeNotification"
 
+/**
+ Protocol to be adapted by validatable fields.
+ */
 @objc public protocol ValidatableField  {
     
+    /// Value in the field. For example `self.text` for a `UITextField`.
     var fieldValue: AnyObject? { get set }
+    
+    /**
+     Adds a target-action for field change event.
+     - Parameters:
+        - target: Target object.
+        - action: Selector to look for.
+     */
     func addFieldValueChangedEventForTarget(target: AnyObject?, action: Selector)
+    
+    /**
+     Removes a target-action for field change event.
+     - Parameters:
+        - target: Target object.
+        - action: Selector to look for.
+     */
     func removeFieldValueChangedEventFromTarget(target: AnyObject?, action: Selector)
 }
 
+/**
+ `FieldValidationDelegate` binds a validator to a field to take care of validation with no effort.
+ */
 public class FieldValidationDelegate<ValidatableType> : NSObject {
 
+    /// Field to be validated.
     public weak var field: ValidatableField?
+    
+    /// Validator to validate field with.
     public var validator: FieldValidator<ValidatableType>
     
     private var storedFieldValue: ValidatableType?
     
+    /**
+     Creates an instance of this class with given field and validator.
+     - Parameters:
+        - field: Field to be validated.
+        - validator: Validator to validate field with.
+     */
     public init(field: ValidatableField?, validator: FieldValidator<ValidatableType>) {
         
         self.validator = validator
@@ -34,6 +65,11 @@ public class FieldValidationDelegate<ValidatableType> : NSObject {
     
     // MARK: Public methods
     
+    /**
+     Validates the field with its current value.
+     - Parameter type: Type of the validation.
+     - Returns: Result of the validation.
+     */
     public func validateForType(type: ValidationType) -> ValidationResult {
         
         let valueToValidate = valueToValidateForField(field)
