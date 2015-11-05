@@ -10,41 +10,67 @@ import Foundation
 
 public extension ValidationRule where ValidatableType: StringLiteralConvertible {
     
-    public init(minLength: UInt) {
-        
-        self.init(validationBlock: { value in
-            if let string = value as? NSString {
-                return string.length >= Int(minLength)
-            }
-            else {
-                return false
-            }
-        });
-    }
-    
-    public init(maxLength: UInt) {
-        
-        self.init(validationBlock: { value in
-            if let string = value as? NSString {
-                return string.length <= Int(maxLength)
-            }
-            else {
-                return false
-            }
-        });
-    }
-    
-    public init(characterSet: NSCharacterSet) {
-        
-        self.init(validationBlock: { value in
-            if let string = value as? NSString {
-                let trimmedString: NSString = string.stringByTrimmingCharactersInSet(characterSet)
-                return trimmedString.length == 0
-            }
-            else {
-                return false;
-            }
+    /**
+     Creates a text validation rule for minimum length check.
+     - Parameters:
+        - error: Error to return upon failure.
+        - minLength: Minimum length of the string.
+     */
+    public init(
+        error: ValidationError = ValidationError(code: 0, localizedDescription: nil),
+        minLength: UInt)
+    {
+        self.init(error: error, validationBlock: { value in
             
+            let string: String? = value as? String
+            let length = string?.gk_length
+            return length >= minLength;
         });
+    }
+    
+    /**
+     Creates a text validation rule for maximum length check.
+     - Parameters:
+        - error: Error to return upon failure.
+        - maxLength: Maximum length of the string.
+     */
+    public init(
+        error: ValidationError = ValidationError(code: 0, localizedDescription: nil),
+        maxLength: UInt)
+    {
+        self.init(error: error, validationBlock: { value in
+            
+            let string: String? = value as? String
+            let length = string?.gk_length
+            return length <= maxLength;
+        });
+    }
+    
+    /**
+     Creates a text validation rule for character set matching.
+     - Parameters:
+        - error: Error to return upon failure.
+        - maxLength: Character set to match.
+     */
+    public init(
+        error: ValidationError = ValidationError(code: 0, localizedDescription: nil),
+        characterSet: NSCharacterSet)
+    {
+        
+        self.init(error: error, validationBlock: { value in
+            
+            let string = value as? String
+            let trimmedString = string?.stringByTrimmingCharactersInSet(characterSet)
+            return trimmedString?.gk_length == 0
+        });
+    }
+}
+
+public extension String {
+    
+    /// Length of the string.
+    public var gk_length: UInt {
+        let length: Int = self.characters.count
+        return (length >= 0) ? UInt(length) : 0;
     }
 }

@@ -8,11 +8,21 @@
 
 import Foundation
 
+/**
+ Set of generic validation rules.
+ */
 public class GenericValidationRuleSet {
     
+    /// Rules in the set.
     public var rules: [GenericValidationRule] = [GenericValidationRule]()
+    
+    /// Last known result of `validate()` call on this set.
     public var lastKnownResult: ValidationResult?
     
+    /**
+     Creates an instance of rule set with given rules.
+     - Parameter rules: Initial rule array to put in this set.
+     */
     public init(rules: [GenericValidationRule]? = nil) {
         
         if let rules = rules {
@@ -20,6 +30,10 @@ public class GenericValidationRuleSet {
         }
     }
     
+    /**
+     Validates all rules in this set.
+     - Returns: Result of the validation.
+     */
     public func validate() -> ValidationResult {
         
         var validationErrors: [NSError]? = nil
