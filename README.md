@@ -1,6 +1,6 @@
 # GKValidator
 
-[![CI Status](http://img.shields.io/travis/Göksel Köksal/GKValidator.svg?style=flat)](https://travis-ci.org/Göksel Köksal/GKValidator)
+[![CI Status](http://img.shields.io/travis/gokselkoksal/GKValidator.svg?style=flat)](https://travis-ci.org/gokselkoksal/GKValidator)
 [![Version](https://img.shields.io/cocoapods/v/GKValidator.svg?style=flat)](http://cocoapods.org/pods/GKValidator)
 [![License](https://img.shields.io/cocoapods/l/GKValidator.svg?style=flat)](http://cocoapods.org/pods/GKValidator)
 [![Platform](https://img.shields.io/cocoapods/p/GKValidator.svg?style=flat)](http://cocoapods.org/pods/GKValidator)
