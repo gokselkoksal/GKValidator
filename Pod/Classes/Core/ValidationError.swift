@@ -8,23 +8,23 @@
 
 import Foundation
 
-public class ValidationError: NSError {
+open class ValidationError: NSError {
     
-    public static let domain = "me.gk.GKValidator.ValidationError"
+    open static let domain = "me.gk.GKValidator.ValidationError"
     
     convenience public init(
         domain: String = ValidationError.domain,
         code: Int,
         localizedDescription: String?,
-        userInfo dict: [NSObject: AnyObject]? = nil)
+        userInfo dict: [AnyHashable: Any]? = nil)
     {
-        var userInfoDict: [NSObject: AnyObject]
+        var userInfoDict: [AnyHashable: Any]
         
         if let dict = dict {
             userInfoDict = dict
         }
         else {
-            userInfoDict = [NSObject: AnyObject]()
+            userInfoDict = [AnyHashable: Any]()
         }
         
         if let localizedDescription = localizedDescription {

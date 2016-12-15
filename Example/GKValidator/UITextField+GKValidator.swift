@@ -13,18 +13,18 @@ extension UITextField : ValidatableField {
     
     public var fieldValue: AnyObject? {
         get {
-            return self.text
+            return self.text as AnyObject?
         }
         set {
             self.text = newValue as? String
         }
     }
     
-    public func addFieldValueChangedEventForTarget(target: AnyObject?, action: Selector) {
-        self.addTarget(target, action: action, forControlEvents: .EditingChanged)
+    public func addFieldValueChangedEventForTarget(_ target: AnyObject?, action: Selector) {
+        self.addTarget(target, action: action, for: .editingChanged)
     }
     
-    public func removeFieldValueChangedEventFromTarget(target: AnyObject?, action: Selector) {
-        self.removeTarget(target, action: action, forControlEvents: .EditingChanged)
+    public func removeFieldValueChangedEventFromTarget(_ target: AnyObject?, action: Selector) {
+        self.removeTarget(target, action: action, for: .editingChanged)
     }
 }

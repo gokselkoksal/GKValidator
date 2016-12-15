@@ -16,7 +16,7 @@ public struct ValidationRule<ValidatableType> {
     
     /// Error to return upon failure.
     public var error: ValidationError
-    private let validationBlock: (value: ValidatableType?) -> Bool
+    fileprivate let validationBlock: (_ value: ValidatableType?) -> Bool
     
     /**
      Creates an instance of this rule.
@@ -26,7 +26,7 @@ public struct ValidationRule<ValidatableType> {
      */
     public init(
         error: ValidationError = ValidationError(code: 0, localizedDescription: nil),
-        validationBlock: (value: ValidatableType?) -> Bool)
+        validationBlock: @escaping (_ value: ValidatableType?) -> Bool)
     {
         self.error = error
         self.validationBlock = validationBlock
@@ -37,8 +37,8 @@ public struct ValidationRule<ValidatableType> {
      - Parameter value: Value to be validated.
      - Returns: Result of the validation.
      */
-    public func validateValue(value: ValidatableType?) -> ValidationResult {
+    public func validateValue(_ value: ValidatableType?) -> ValidationResult {
         
-        return validationBlock(value: value) ? .Success : .Failure(errors: [error])
+        return validationBlock(value) ? .success : .failure(errors: [error])
     }
 }

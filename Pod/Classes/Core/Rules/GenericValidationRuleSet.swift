@@ -11,13 +11,13 @@ import Foundation
 /**
  Set of generic validation rules.
  */
-public class GenericValidationRuleSet {
+open class GenericValidationRuleSet {
     
     /// Rules in the set.
-    public var rules: [GenericValidationRule] = [GenericValidationRule]()
+    open var rules: [GenericValidationRule] = [GenericValidationRule]()
     
     /// Last known result of `validate()` call on this set.
-    public var lastKnownResult: ValidationResult?
+    open var lastKnownResult: ValidationResult?
     
     /**
      Creates an instance of rule set with given rules.
@@ -34,7 +34,7 @@ public class GenericValidationRuleSet {
      Validates all rules in this set.
      - Returns: Result of the validation.
      */
-    public func validate() -> ValidationResult {
+    open func validate() -> ValidationResult {
         
         var validationErrors: [NSError]? = nil
         
@@ -43,7 +43,7 @@ public class GenericValidationRuleSet {
             let result = rule.validate()
             
             switch result {
-            case .Failure(let errors):
+            case .failure(let errors):
                 validationErrors = errors
                 break ruleLoop
             default:
@@ -51,11 +51,11 @@ public class GenericValidationRuleSet {
             }
         }
         
-        if let errors = validationErrors where errors.count > 0 {
-            lastKnownResult = .Failure(errors: errors)
+        if let errors = validationErrors, errors.count > 0 {
+            lastKnownResult = .failure(errors: errors)
         }
         else {
-            lastKnownResult = .Success
+            lastKnownResult = .success
         }
         
         return lastKnownResult!

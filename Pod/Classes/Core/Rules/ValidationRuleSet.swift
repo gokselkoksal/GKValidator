@@ -11,16 +11,16 @@ import Foundation
 /**
  Set of validation rules.
  */
-public class ValidationRuleSet<ValidatableType> {
+open class ValidationRuleSet<ValidatableType> {
     
     /// Rules in the set.
-    public var rules: [ValidationRule<ValidatableType>] = [ValidationRule<ValidatableType>]()
+    open var rules: [ValidationRule<ValidatableType>] = [ValidationRule<ValidatableType>]()
     
     /// Validates nil successfully when set to true. Defaults to false.
-    public var validatesNil: Bool = false
+    open var validatesNil: Bool = false
     
     /// Last known result of `validateValue(_:)` call on this set.
-    public var lastKnownResult: ValidationResult?
+    open var lastKnownResult: ValidationResult?
     
     /**
      Creates an instance of rule set with given rules.
@@ -41,7 +41,7 @@ public class ValidationRuleSet<ValidatableType> {
      - Parameter value: Value to be validated.
      - Returns: Result of the validation.
      */
-    public func validateValue(value: ValidatableType?) -> ValidationResult {
+    open func validateValue(_ value: ValidatableType?) -> ValidationResult {
         
         var validationErrors: [NSError]? = nil
         
@@ -50,7 +50,7 @@ public class ValidationRuleSet<ValidatableType> {
             let result = rule.validateValue(value)
             
             switch result {
-            case .Failure(let errors):
+            case .failure(let errors):
                 validationErrors = errors
                 break ruleLoop
             default:
@@ -58,11 +58,11 @@ public class ValidationRuleSet<ValidatableType> {
             }
         }
         
-        if let errors = validationErrors where errors.count > 0 {
-            lastKnownResult = (validatesNil && value == nil) ? .Success : .Failure(errors: errors)
+        if let errors = validationErrors, errors.count > 0 {
+            lastKnownResult = (validatesNil && value == nil) ? .success : .failure(errors: errors)
         }
         else {
-            lastKnownResult = .Success
+            lastKnownResult = .success
         }
         
         return lastKnownResult!

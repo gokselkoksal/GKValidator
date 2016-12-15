@@ -16,7 +16,7 @@ public struct GenericValidationRule {
     
     /// Error to return upon failure.
     public var error: ValidationError
-    private let validationBlock: () -> Bool
+    fileprivate let validationBlock: () -> Bool
     
     /**
      Creates an instance of this rule.
@@ -26,7 +26,7 @@ public struct GenericValidationRule {
      */
     public init(
         error: ValidationError = ValidationError(code: 0, localizedDescription: nil),
-        validationBlock: () -> Bool)
+        validationBlock: @escaping () -> Bool)
     {
         self.error = error
         self.validationBlock = validationBlock
@@ -38,6 +38,6 @@ public struct GenericValidationRule {
      */
     public func validate() -> ValidationResult {
         
-        return validationBlock() ? .Success : .Failure(errors: [error]);
+        return validationBlock() ? .success : .failure(errors: [error]);
     }
 }

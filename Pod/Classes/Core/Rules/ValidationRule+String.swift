@@ -7,8 +7,43 @@
 //
 
 import Foundation
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
 
-public extension ValidationRule where ValidatableType: StringLiteralConvertible {
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func >= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l >= r
+  default:
+    return !(lhs < rhs)
+  }
+}
+
+// FIXME: comparison operators with optionals were removed from the Swift Standard Libary.
+// Consider refactoring the code to use the non-optional operators.
+fileprivate func <= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l <= r
+  default:
+    return !(rhs < lhs)
+  }
+}
+
+
+public extension ValidationRule where ValidatableType: ExpressibleByStringLiteral {
     
     /**
      Creates a text validation rule for minimum length check.
@@ -54,13 +89,13 @@ public extension ValidationRule where ValidatableType: StringLiteralConvertible 
      */
     public init(
         error: ValidationError = ValidationError(code: 0, localizedDescription: nil),
-        characterSet: NSCharacterSet)
+        characterSet: CharacterSet)
     {
         
         self.init(error: error, validationBlock: { value in
             
             let string = value as? String
-            let trimmedString = string?.stringByTrimmingCharactersInSet(characterSet)
+            let trimmedString = string?.trimmingCharacters(in: characterSet)
             return trimmedString?.gk_length == 0
         });
     }

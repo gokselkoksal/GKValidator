@@ -49,9 +49,9 @@ class RegistrationViewController: UIViewController, FormValidatorDelegate {
     
     // MARK: Actions
     
-    @IBAction func registerTapped(sender: AnyObject) {
+    @IBAction func registerTapped(_ sender: AnyObject) {
         
-        let resultPairs = self.formValidator.validateForType(ValidationType.Submission)
+        let resultPairs = self.formValidator.validateForType(ValidationType.submission)
         var success = true
         
         for resultPair in resultPairs {
@@ -60,34 +60,34 @@ class RegistrationViewController: UIViewController, FormValidatorDelegate {
         
         if success {
             
-            let alert = UIAlertController(title: nil, message: "Form submitted!", preferredStyle: .Alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
-            self.presentViewController(alert, animated: true, completion: nil)
+            let alert = UIAlertController(title: nil, message: "Form submitted!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
-    func fieldDidEndEditing(textField: UITextField!) {
+    func fieldDidEndEditing(_ textField: UITextField!) {
         
         if let validationDelegate = self.formValidator.fieldValidationDelegateForField(textField) {
             
-            if let lastKnownResult = validationDelegate.validator.validationRuleSets[.Eligibility]?.lastKnownResult {
-                textField.layer.borderColor = (lastKnownResult.isSuccess ? UIColor.lightGrayColor() : UIColor.redColor()).CGColor
+            if let lastKnownResult = validationDelegate.validator.validationRuleSets[.eligibility]?.lastKnownResult {
+                textField.layer.borderColor = (lastKnownResult.isSuccess ? UIColor.lightGray : UIColor.red).cgColor
             }
         }
     }
     
     // MARK: FormValidatorDelegate
     
-    func formValidator(formValidator: FormValidator, didValidateForType type: ValidationType, resultPairs: [ObjectValidationResultPair]) {
+    func formValidator(_ formValidator: FormValidator, didValidateForType type: ValidationType, resultPairs: [ObjectValidationResultPair]) {
         
         switch type {
             
-        case .Submission:
+        case .submission:
             
             for resultPair in resultPairs {
                 
                 switch resultPair.result {
-                case .Failure(let errors):
+                case .failure(let errors):
                     if let error = errors.first {
                         self.showAlertForError(error)
                     }
@@ -101,17 +101,17 @@ class RegistrationViewController: UIViewController, FormValidatorDelegate {
         }
     }
     
-    func formValidator(formValidator: FormValidator, didChangeState state: ValidationState) {
+    func formValidator(_ formValidator: FormValidator, didChangeState state: ValidationState) {
         
         var string: String = ""
         
         if state.contains(ValidationState.Eligible) {
             
             string += ">Eligible"
-            self.registerBarButton.enabled = true
+            self.registerBarButton.isEnabled = true
         }
         else {
-            self.registerBarButton.enabled = false
+            self.registerBarButton.isEnabled = false
         }
         
         if state.contains(ValidationState.Complete) {
@@ -132,22 +132,22 @@ class RegistrationViewController: UIViewController, FormValidatorDelegate {
     
     // MARK: Private
     
-    private func showAlertForError(error: NSError) {
+    fileprivate func showAlertForError(_ error: NSError) {
         
-        let alert = UIAlertController(title: nil, message: error.localizedDescription, preferredStyle: .Alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .Cancel, handler: nil))
-        self.presentViewController(alert, animated: true, completion: nil)
+        let alert = UIAlertController(title: nil, message: error.localizedDescription, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
     
-    private func customizeField(field: UITextField) {
+    fileprivate func customizeField(_ field: UITextField) {
         
         field.leftView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 8.0, height: 0.0))
-        field.leftViewMode = .Always
+        field.leftViewMode = .always
         field.rightView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 8.0, height: 0.0))
-        field.rightViewMode = .Always
-        field.layer.borderColor = UIColor.lightGrayColor().CGColor
+        field.rightViewMode = .always
+        field.layer.borderColor = UIColor.lightGray.cgColor
         field.layer.borderWidth = 1.0
         field.layer.cornerRadius = 5
-        field.addTarget(self, action: "fieldDidEndEditing:", forControlEvents: .EditingDidEnd)
+        field.addTarget(self, action: #selector(RegistrationViewController.fieldDidEndEditing(_:)), for: .editingDidEnd)
     }
 }
