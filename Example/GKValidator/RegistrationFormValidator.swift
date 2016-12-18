@@ -59,21 +59,19 @@ class RegistrationFormValidator : FormValidator {
             self.mobileNumberFieldDelegate,
         ]
         
-        let matchPasswordsError = ValidationError(code: 1000, localizedDescription: "Passwords do not match.")
-        let matchPasswordsRule = GenericValidationRule(error: matchPasswordsError) { () -> Bool in
-            
+        let matchPasswordsError = ValidationError(message: "Passwords do not match.")
+        let matchPasswordsRule = GenericValidationRule {
+            var condition = false
             if let passwordField = self.passwordFieldDelegate.field as? UITextField,
                 let rePasswordField = self.rePasswordFieldDelegate.field as? UITextField {
-                    return passwordField.text == rePasswordField.text
+                condition = passwordField.text == rePasswordField.text
             }
-            else {
-                return false
-            }
+            return ValidationResult(condition: condition, error: matchPasswordsError)
         }
         
-        let tAndCError = ValidationError(code: 1001, localizedDescription: "Please accept terms and conditions.")
-        let tAndCRule = GenericValidationRule(error: tAndCError) { () -> Bool in
-            return tAndCSwitch.isOn
+        let tAndCError = ValidationError(message: "Please accept terms and conditions.")
+        let tAndCRule = GenericValidationRule {
+            return ValidationResult(condition: tAndCSwitch.isOn, error: tAndCError)
         }
         
         self.addValidationRules([

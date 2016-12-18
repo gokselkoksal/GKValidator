@@ -8,29 +8,17 @@
 
 import Foundation
 
-open class ValidationError: NSError {
+public struct ValidationError: LocalizedError {
     
-    open static let domain = "me.gk.GKValidator.ValidationError"
+    public let code: Int
+    public let message: String
     
-    convenience public init(
-        domain: String = ValidationError.domain,
-        code: Int,
-        localizedDescription: String?,
-        userInfo dict: [AnyHashable: Any]? = nil)
-    {
-        var userInfoDict: [AnyHashable: Any]
-        
-        if let dict = dict {
-            userInfoDict = dict
-        }
-        else {
-            userInfoDict = [AnyHashable: Any]()
-        }
-        
-        if let localizedDescription = localizedDescription {
-            userInfoDict[NSLocalizedDescriptionKey] = localizedDescription
-        }
-        
-        self.init(domain: domain, code: code, userInfo: userInfoDict)
+    public init(code: Int = 0, message: String) {
+        self.code = code
+        self.message = message
+    }
+    
+    public var localizedDescription: String {
+        return message
     }
 }

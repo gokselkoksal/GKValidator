@@ -14,22 +14,18 @@ import Foundation
  */
 public struct ValidationRule<ValidatableType> {
     
+    public typealias ValidationBlock = ((ValidatableType) -> ValidationResult)
+    
     /// Error to return upon failure.
-    public var error: ValidationError
-    fileprivate let validationBlock: (_ value: ValidatableType?) -> Bool
+    fileprivate let handler: ValidationBlock
     
     /**
      Creates an instance of this rule.
      - Parameters:
-        - error: Error to return upon failure.
-        - validationBlock: Block to execute upon `validate()` call.
+        - handler: Block to execute upon `validate()` call.
      */
-    public init(
-        error: ValidationError = ValidationError(code: 0, localizedDescription: nil),
-        validationBlock: @escaping (_ value: ValidatableType?) -> Bool)
-    {
-        self.error = error
-        self.validationBlock = validationBlock
+    public init(handler: @escaping ValidationBlock) {
+        self.handler = handler
     }
     
     /**
@@ -37,8 +33,7 @@ public struct ValidationRule<ValidatableType> {
      - Parameter value: Value to be validated.
      - Returns: Result of the validation.
      */
-    public func validateValue(_ value: ValidatableType?) -> ValidationResult {
-        
-        return validationBlock(value) ? .success : .failure(errors: [error])
+    public func validate(_ value: ValidatableType) -> ValidationResult {
+        return handler(value)
     }
 }

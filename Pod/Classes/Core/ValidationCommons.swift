@@ -12,6 +12,8 @@ import Foundation
 
 public typealias TextValidationRule = ValidationRule<String>
 public typealias TextValidationRuleSet = ValidationRuleSet<String>
+public typealias GenericValidationRule = ValidationRule<Void>
+public typealias GenericValidationRuleSet = ValidationRuleSet<Void>
 public typealias TextFieldValidator = FieldValidator<String>
 public typealias TextFieldValidationDelegate = FieldValidationDelegate<String>
 
@@ -57,9 +59,10 @@ public struct ValidationState : OptionSet {
 public enum ValidationResult {
     
     case success
-    case failure(errors: [NSError])
-    
-    // MARK: Convenience
+    case failure([Error])
+}
+
+public extension ValidationResult {
     
     public var isSuccess: Bool {
         switch self {
@@ -70,12 +73,24 @@ public enum ValidationResult {
         }
     }
     
-    public var errors: [NSError]? {
+    public var errors: [Error]? {
         switch self {
         case .failure(let resultingErrors):
             return resultingErrors
         default:
             return nil
+        }
+    }
+    
+    public init(condition: Bool, error: Error? = nil) {
+        if condition {
+            self = .success
+        } else {
+            if let error = error {
+                self = .failure([error])
+            } else {
+                self = .failure([])
+            }
         }
     }
 }

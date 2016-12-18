@@ -132,7 +132,7 @@ class RegistrationViewController: UIViewController, FormValidatorDelegate {
     
     // MARK: Private
     
-    fileprivate func showAlertForError(_ error: NSError) {
+    fileprivate func showAlertForError(_ error: Error) {
         
         let alert = UIAlertController(title: nil, message: error.localizedDescription, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))

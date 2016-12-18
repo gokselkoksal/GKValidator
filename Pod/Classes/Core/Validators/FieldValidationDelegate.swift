@@ -17,7 +17,7 @@ public let FieldDidChangeNotification: String = "FieldDidChangeNotification"
 @objc public protocol ValidatableField  {
     
     /// Value in the field. For example `self.text` for a `UITextField`.
-    var fieldValue: AnyObject? { get set }
+    var fieldValue: Any? { get set }
     
     /**
      Adds a target-action for field change event.
@@ -25,7 +25,7 @@ public let FieldDidChangeNotification: String = "FieldDidChangeNotification"
         - target: Target object.
         - action: Selector to look for.
      */
-    func addFieldValueChangedEventForTarget(_ target: AnyObject?, action: Selector)
+    func addFieldValueChangedEvent(forTarget target: AnyObject?, action: Selector)
     
     /**
      Removes a target-action for field change event.
@@ -33,7 +33,7 @@ public let FieldDidChangeNotification: String = "FieldDidChangeNotification"
         - target: Target object.
         - action: Selector to look for.
      */
-    func removeFieldValueChangedEventFromTarget(_ target: AnyObject?, action: Selector)
+    func removeFieldValueChangedEvent(fromTarget target: AnyObject?, action: Selector)
 }
 
 /**
@@ -60,7 +60,7 @@ open class FieldValidationDelegate<ValidatableType> : NSObject {
         self.validator = validator
         self.field = field
         super.init()
-        self.field?.addFieldValueChangedEventForTarget(self, action: #selector(FieldValidationDelegate.fieldValueDidChange(_:)))
+        self.field?.addFieldValueChangedEvent(forTarget: self, action: #selector(FieldValidationDelegate.fieldValueDidChange(_:)))
     }
     
     // MARK: Public methods
