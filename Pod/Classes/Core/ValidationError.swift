@@ -18,7 +18,7 @@ public struct ValidationError: LocalizedError {
         self.message = message
     }
     
-    public var localizedDescription: String {
+    public var errorDescription: String? {
         return message
     }
 }
