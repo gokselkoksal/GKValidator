@@ -165,6 +165,12 @@ it, simply add the following line to your Podfile:
 pod "GKValidator"
 ```
 
+### Support
+
+* **Swift 2.2**: Use version `0.X.X`
+* **Swift 3**: Use version `1.X.X`
+* **Swift 4**: Use version `2.X.X`
+
 ## Author
 
 Göksel Köksal, gokselkoksal@gmail.com
