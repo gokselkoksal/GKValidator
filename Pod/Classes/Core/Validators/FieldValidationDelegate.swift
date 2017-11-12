@@ -70,6 +70,7 @@ open class FieldValidationDelegate<ValidatableType> : NSObject {
      - Parameter type: Type of the validation.
      - Returns: Result of the validation.
      */
+    @discardableResult
     open func validateForType(_ type: ValidationType) -> ValidationResult {
         
         let valueToValidate = valueToValidateForField(field)

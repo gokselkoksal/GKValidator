@@ -81,6 +81,7 @@ open class FieldValidator<ValidatableType> {
      - Parameter input: Input to be validated.
      - Returns: Result of the validation.
      */
+    @discardableResult
     open func validateInput(_ input: ValidatableType?) -> ValidationResult {
         guard let input = input else {
             return .success
@@ -95,6 +96,7 @@ open class FieldValidator<ValidatableType> {
         - type: Type of validation.
      - Returns: Result of the validation.
      */
+    @discardableResult
     open func validateValue(_ value: ValidatableType?, forType type: ValidationType) -> ValidationResult {
         guard let ruleSet = validationRuleSets[type] else {
             return .success
