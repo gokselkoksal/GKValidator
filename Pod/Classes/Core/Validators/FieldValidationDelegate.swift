@@ -91,7 +91,7 @@ open class FieldValidationDelegate<ValidatableType> : NSObject {
             postFieldModelDidChangeNotification()
             
         default:
-            field.fieldValue = storedFieldValue as? AnyObject
+            field.fieldValue = storedFieldValue
         }
     }
     
@@ -103,7 +103,7 @@ open class FieldValidationDelegate<ValidatableType> : NSObject {
         let valueToValidate: ValidatableType?
         
         // Empty string should not be validated. Pass nil instead.
-        if let string = value as? String, string.characters.count == 0 {
+        if let string = value as? String, string.count == 0 {
             valueToValidate = nil
         }
         else {

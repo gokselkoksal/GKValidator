@@ -123,6 +123,7 @@ open class FormValidator : NSObject {
      - Parameter type: Type of validation.
      - Returns: Validation results in tuples (object, result).
      */
+    @discardableResult
     open func validateForType(_ type: ValidationType) -> [ObjectValidationResultPair] {
         
         guard let fieldDelegates = fieldValidationDelegates, (type == ValidationType.submission ? state.contains(ValidationState.Eligible) : true) else {
