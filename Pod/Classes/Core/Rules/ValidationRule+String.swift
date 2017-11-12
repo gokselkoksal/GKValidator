@@ -18,7 +18,7 @@ public extension ValidationRule where ValidatableType: CustomStringConvertible {
      */
     public init(minLength: UInt, error: Error? = nil) {
         self.init(handler: { value in
-            let condition = value.description.characters.count >= Int(minLength)
+            let condition = value.description.count >= Int(minLength)
             return ValidationResult(condition: condition, error: error)
         })
     }
