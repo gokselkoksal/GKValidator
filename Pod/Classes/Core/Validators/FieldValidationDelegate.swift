@@ -79,7 +79,7 @@ open class FieldValidationDelegate<ValidatableType> : NSObject {
     
     // MARK: Actions
     
-    func fieldValueDidChange(_ field: ValidatableField!) {
+    @objc func fieldValueDidChange(_ field: ValidatableField!) {
         
         let valueToValidate = valueToValidateForField(field)
         

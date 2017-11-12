@@ -152,7 +152,7 @@ open class FormValidator : NSObject {
             
         if let ruleSet = validationRuleSets[type], success {
             
-            let result = ruleSet.validate()
+            let result = ruleSet.validate(())
             success = result.isSuccess
             resultPairs.append((object: self, result: result))
         }
@@ -174,7 +174,7 @@ open class FormValidator : NSObject {
     
     // MARK: Private
     
-    func fieldDidChange(_ notification: Notification) {
+    @objc func fieldDidChange(_ notification: Notification) {
         
         validateForType(ValidationType.eligibility)
     }

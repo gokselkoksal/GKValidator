@@ -66,7 +66,7 @@ class RegistrationViewController: UIViewController, FormValidatorDelegate {
         }
     }
     
-    func fieldDidEndEditing(_ textField: UITextField!) {
+    @objc func fieldDidEndEditing(_ textField: UITextField!) {
         
         if let validationDelegate = self.formValidator.fieldValidationDelegateForField(textField) {
             
@@ -106,11 +106,9 @@ class RegistrationViewController: UIViewController, FormValidatorDelegate {
         var string: String = ""
         
         if state.contains(ValidationState.Eligible) {
-            
             string += ">Eligible"
             self.registerBarButton.isEnabled = true
-        }
-        else {
+        } else {
             self.registerBarButton.isEnabled = false
         }
         
@@ -122,8 +120,7 @@ class RegistrationViewController: UIViewController, FormValidatorDelegate {
             string += ">Submittable"
         }
         
-        if (string.characters.count == 0)
-        {
+        if string.count == 0 {
             string = ">Default"
         }
         
