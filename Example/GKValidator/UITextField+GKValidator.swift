@@ -11,7 +11,7 @@ import GKValidator
 
 extension UITextField : ValidatableField {
     
-    public var fieldValue: AnyObject? {
+    public var fieldValue: Any? {
         get {
             return self.text
         }
@@ -20,11 +20,11 @@ extension UITextField : ValidatableField {
         }
     }
     
-    public func addFieldValueChangedEventForTarget(target: AnyObject?, action: Selector) {
-        self.addTarget(target, action: action, forControlEvents: .EditingChanged)
+    public func addFieldValueChangedEvent(forTarget target: AnyObject?, action: Selector) {
+        self.addTarget(target, action: action, for: .editingChanged)
     }
     
-    public func removeFieldValueChangedEventFromTarget(target: AnyObject?, action: Selector) {
-        self.removeTarget(target, action: action, forControlEvents: .EditingChanged)
+    public func removeFieldValueChangedEvent(fromTarget target: AnyObject?, action: Selector) {
+        self.removeTarget(target, action: action, for: .editingChanged)
     }
 }

@@ -59,36 +59,34 @@ class RegistrationFormValidator : FormValidator {
             self.mobileNumberFieldDelegate,
         ]
         
-        let matchPasswordsError = ValidationError(code: 1000, localizedDescription: "Passwords do not match.")
-        let matchPasswordsRule = GenericValidationRule(error: matchPasswordsError) { () -> Bool in
-            
+        let matchPasswordsError = ValidationError(message: "Passwords do not match.")
+        let matchPasswordsRule = GenericValidationRule {
+            var condition = false
             if let passwordField = self.passwordFieldDelegate.field as? UITextField,
                 let rePasswordField = self.rePasswordFieldDelegate.field as? UITextField {
-                    return passwordField.text == rePasswordField.text
+                condition = passwordField.text == rePasswordField.text
             }
-            else {
-                return false
-            }
+            return ValidationResult(condition: condition, error: matchPasswordsError)
         }
         
-        let tAndCError = ValidationError(code: 1001, localizedDescription: "Please accept terms and conditions.")
-        let tAndCRule = GenericValidationRule(error: tAndCError) { () -> Bool in
-            return tAndCSwitch.on
+        let tAndCError = ValidationError(message: "Please accept terms and conditions.")
+        let tAndCRule = GenericValidationRule {
+            return ValidationResult(condition: tAndCSwitch.isOn, error: tAndCError)
         }
         
         self.addValidationRules([
             matchPasswordsRule,
             tAndCRule,
-            ], forType: .Submission)
+            ], forType: .submission)
     }
     
     // MARK: Field validators
     
-    private class func displayNameFieldValidator() -> TextFieldValidator {
+    fileprivate class func displayNameFieldValidator() -> TextFieldValidator {
         
         let validator = TextFieldValidator()
-        let characterSet = NSMutableCharacterSet.letterCharacterSet()
-        characterSet.formUnionWithCharacterSet(NSCharacterSet.whitespaceCharacterSet())
+        var characterSet = CharacterSet.letters
+        characterSet.formUnion(CharacterSet.whitespaces)
         
         validator.addInputRules([
             TextValidationRule(maxLength: 20),
@@ -97,73 +95,73 @@ class RegistrationFormValidator : FormValidator {
         
         validator.addValidationRules([
             TextValidationRule(minLength: 5)
-            ], forType: .Eligibility)
+            ], forType: .eligibility)
         
         validator.optional = true
         
         return validator
     }
     
-    private class func usernameFieldValidator() -> TextFieldValidator {
+    fileprivate class func usernameFieldValidator() -> TextFieldValidator {
         
         let validator = TextFieldValidator()
         
         validator.addInputRules([
             TextValidationRule(maxLength: 10),
-            TextValidationRule(characterSet: NSMutableCharacterSet.alphanumericCharacterSet())
+            TextValidationRule(characterSet: CharacterSet.alphanumerics)
             ]);
         
         validator.addValidationRules([
             TextValidationRule(minLength: 5)
-            ], forType: .Eligibility);
+            ], forType: .eligibility);
         
         return validator
     }
     
-    private class func emailFieldValidator() -> TextFieldValidator {
+    fileprivate class func emailFieldValidator() -> TextFieldValidator {
         
         let validator = TextFieldValidator()
         
         validator.addInputRules([
             TextValidationRule(maxLength: 255),
-            TextValidationRule(characterSet: NSMutableCharacterSet.alphanumericCharacterSet())
+            TextValidationRule(characterSet: CharacterSet.alphanumerics)
             ]);
         
         validator.addValidationRules([
             TextValidationRule(minLength: 8)
-            ], forType: .Eligibility);
+            ], forType: .eligibility);
         
         return validator
     }
     
-    private class func passwordFieldValidator() -> TextFieldValidator {
+    fileprivate class func passwordFieldValidator() -> TextFieldValidator {
         
         let validator = TextFieldValidator()
         
         validator.addInputRules([
             TextValidationRule(maxLength: 15),
-            TextValidationRule(characterSet: NSMutableCharacterSet.alphanumericCharacterSet())
+            TextValidationRule(characterSet: CharacterSet.alphanumerics)
             ]);
         
         validator.addValidationRules([
             TextValidationRule(minLength: 8)
-            ], forType: .Eligibility);
+            ], forType: .eligibility);
         
         return validator
     }
     
-    private class func mobileNumberFieldValidator() -> TextFieldValidator {
+    fileprivate class func mobileNumberFieldValidator() -> TextFieldValidator {
         
         let validator = TextFieldValidator()
         
         validator.addInputRules([
             TextValidationRule(maxLength: 11),
-            TextValidationRule(characterSet: NSMutableCharacterSet.decimalDigitCharacterSet())
+            TextValidationRule(characterSet: CharacterSet.decimalDigits)
             ]);
         
         validator.addValidationRules([
             TextValidationRule(minLength: 11)
-            ], forType: .Eligibility);
+            ], forType: .eligibility);
         
         return validator
     }

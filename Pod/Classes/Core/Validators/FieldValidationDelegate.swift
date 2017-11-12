@@ -17,7 +17,7 @@ public let FieldDidChangeNotification: String = "FieldDidChangeNotification"
 @objc public protocol ValidatableField  {
     
     /// Value in the field. For example `self.text` for a `UITextField`.
-    var fieldValue: AnyObject? { get set }
+    var fieldValue: Any? { get set }
     
     /**
      Adds a target-action for field change event.
@@ -25,7 +25,7 @@ public let FieldDidChangeNotification: String = "FieldDidChangeNotification"
         - target: Target object.
         - action: Selector to look for.
      */
-    func addFieldValueChangedEventForTarget(target: AnyObject?, action: Selector)
+    func addFieldValueChangedEvent(forTarget target: AnyObject?, action: Selector)
     
     /**
      Removes a target-action for field change event.
@@ -33,21 +33,21 @@ public let FieldDidChangeNotification: String = "FieldDidChangeNotification"
         - target: Target object.
         - action: Selector to look for.
      */
-    func removeFieldValueChangedEventFromTarget(target: AnyObject?, action: Selector)
+    func removeFieldValueChangedEvent(fromTarget target: AnyObject?, action: Selector)
 }
 
 /**
  `FieldValidationDelegate` binds a validator to a field to take care of validation with no effort.
  */
-public class FieldValidationDelegate<ValidatableType> : NSObject {
+open class FieldValidationDelegate<ValidatableType> : NSObject {
 
     /// Field to be validated.
-    public weak var field: ValidatableField?
+    open weak var field: ValidatableField?
     
     /// Validator to validate field with.
-    public var validator: FieldValidator<ValidatableType>
+    open var validator: FieldValidator<ValidatableType>
     
-    private var storedFieldValue: ValidatableType?
+    fileprivate var storedFieldValue: ValidatableType?
     
     /**
      Creates an instance of this class with given field and validator.
@@ -60,7 +60,7 @@ public class FieldValidationDelegate<ValidatableType> : NSObject {
         self.validator = validator
         self.field = field
         super.init()
-        self.field?.addFieldValueChangedEventForTarget(self, action: "fieldValueDidChange:")
+        self.field?.addFieldValueChangedEvent(forTarget: self, action: #selector(FieldValidationDelegate.fieldValueDidChange(_:)))
     }
     
     // MARK: Public methods
@@ -70,7 +70,8 @@ public class FieldValidationDelegate<ValidatableType> : NSObject {
      - Parameter type: Type of the validation.
      - Returns: Result of the validation.
      */
-    public func validateForType(type: ValidationType) -> ValidationResult {
+    @discardableResult
+    open func validateForType(_ type: ValidationType) -> ValidationResult {
         
         let valueToValidate = valueToValidateForField(field)
         return validator.validateValue(valueToValidate, forType: type)
@@ -78,15 +79,15 @@ public class FieldValidationDelegate<ValidatableType> : NSObject {
     
     // MARK: Actions
     
-    func fieldValueDidChange(field: ValidatableField!) {
+    func fieldValueDidChange(_ field: ValidatableField!) {
         
         let valueToValidate = valueToValidateForField(field)
         
         switch validator.validateInput(valueToValidate) {
-        case .Success:
+        case .success:
             storedFieldValue = valueToValidate
-            validateForType(.Eligibility)
-            validateForType(.Completeness)
+            validateForType(.eligibility)
+            validateForType(.completeness)
             postFieldModelDidChangeNotification()
             
         default:
@@ -96,13 +97,13 @@ public class FieldValidationDelegate<ValidatableType> : NSObject {
     
     // MARK: Private
     
-    private func valueToValidateForField(field: ValidatableField?) -> ValidatableType? {
+    fileprivate func valueToValidateForField(_ field: ValidatableField?) -> ValidatableType? {
         
         let value = field?.fieldValue as? ValidatableType
         let valueToValidate: ValidatableType?
         
         // Empty string should not be validated. Pass nil instead.
-        if let string = value as? String where string.characters.count == 0 {
+        if let string = value as? String, string.characters.count == 0 {
             valueToValidate = nil
         }
         else {
@@ -112,7 +113,7 @@ public class FieldValidationDelegate<ValidatableType> : NSObject {
         return valueToValidate
     }
     
-    private func postFieldModelDidChangeNotification() {
-        NSNotificationCenter.defaultCenter().postNotificationName(FieldDidChangeNotification, object: self)
+    fileprivate func postFieldModelDidChangeNotification() {
+        NotificationCenter.default.post(name: Notification.Name(rawValue: FieldDidChangeNotification), object: self)
     }
 }

@@ -21,7 +21,7 @@ public protocol FormValidatorDelegate {
         - formValidator: Notifier form validator.
         - state: New state of the form.
      */
-    func formValidator(formValidator: FormValidator, didChangeState state: ValidationState)
+    func formValidator(_ formValidator: FormValidator, didChangeState state: ValidationState)
     
     /**
      Gets fired after validation.
@@ -30,22 +30,22 @@ public protocol FormValidatorDelegate {
         - type: Type of the validation.
         - resultPairs: Validation results in tuples (object, result).
      */
-    func formValidator(formValidator: FormValidator, didValidateForType type: ValidationType, resultPairs: [ObjectValidationResultPair])
+    func formValidator(_ formValidator: FormValidator, didValidateForType type: ValidationType, resultPairs: [ObjectValidationResultPair])
 }
 
 /**
  `FormValidator` encapsulates logic for field-validation and general form-validation.
  */
-public class FormValidator : NSObject {
+open class FormValidator : NSObject {
     
     /// Delegate object.
-    public var delegate: FormValidatorDelegate?
+    open var delegate: FormValidatorDelegate?
     
     /// General validation rules to be validated by the form. Use these rules to validate dependencies between fields.
-    public var validationRuleSets: [ValidationType: GenericValidationRuleSet] = [ValidationType: GenericValidationRuleSet]()
+    open var validationRuleSets: [ValidationType: GenericValidationRuleSet] = [ValidationType: GenericValidationRuleSet]()
     
     /// State of the form.
-    public private(set) var state: ValidationState = [] {
+    open fileprivate(set) var state: ValidationState = [] {
         didSet {
             
             if oldValue.rawValue == state.rawValue {
@@ -64,19 +64,19 @@ public class FormValidator : NSObject {
     // TODO: Change FieldValidationDelegate<String> to FieldValidationDelegate<AnyObject> when Swift supports type covariance.
     
     /// Field validation delegate objects to be observed.
-    public var fieldValidationDelegates: [FieldValidationDelegate<String>]? {
+    open var fieldValidationDelegates: [FieldValidationDelegate<String>]? {
         didSet {
             
             if let fieldDelegates = fieldValidationDelegates {
                 
-                NSNotificationCenter.defaultCenter().removeObserver(self,
-                    name: FieldDidChangeNotification,
+                NotificationCenter.default.removeObserver(self,
+                    name: NSNotification.Name(rawValue: FieldDidChangeNotification),
                     object: nil)
                 
                 for fieldDelegate in fieldDelegates {
-                    NSNotificationCenter.defaultCenter().addObserver(self,
-                        selector: "fieldDidChange:",
-                        name: FieldDidChangeNotification,
+                    NotificationCenter.default.addObserver(self,
+                        selector: #selector(FormValidator.fieldDidChange(_:)),
+                        name: NSNotification.Name(rawValue: FieldDidChangeNotification),
                         object: fieldDelegate)
                 }
             }
@@ -89,7 +89,7 @@ public class FormValidator : NSObject {
      Returns validation delegate object observed for given field.
      - Parameter field: Field to return validation delegate for.
      */
-    public func fieldValidationDelegateForField(field: AnyObject) -> FieldValidationDelegate<String>? {
+    open func fieldValidationDelegateForField(_ field: AnyObject) -> FieldValidationDelegate<String>? {
         
         if let fieldValidationDelegates = fieldValidationDelegates {
             for fieldDelegate in fieldValidationDelegates {
@@ -108,10 +108,10 @@ public class FormValidator : NSObject {
         - rules: Rules to add.
         - type: Type of validation to add rules for.
      */
-    public func addValidationRules(rules: [GenericValidationRule], forType type: ValidationType) {
+    open func addValidationRules(_ rules: [GenericValidationRule], forType type: ValidationType) {
         
         if let ruleSet = validationRuleSets[type] {
-            ruleSet.rules.appendContentsOf(rules)
+            ruleSet.rules.append(contentsOf: rules)
         }
         else {
             validationRuleSets[type] = GenericValidationRuleSet(rules: rules)
@@ -123,10 +123,9 @@ public class FormValidator : NSObject {
      - Parameter type: Type of validation.
      - Returns: Validation results in tuples (object, result).
      */
-    public func validateForType(type: ValidationType) -> [ObjectValidationResultPair] {
+    open func validateForType(_ type: ValidationType) -> [ObjectValidationResultPair] {
         
-        guard let fieldDelegates = fieldValidationDelegates
-            where (type == ValidationType.Submission ? state.contains(ValidationState.Eligible) : true) else {
+        guard let fieldDelegates = fieldValidationDelegates, (type == ValidationType.submission ? state.contains(ValidationState.Eligible) : true) else {
             return []
         }
         
@@ -151,7 +150,7 @@ public class FormValidator : NSObject {
             
         // Validate form rules.
             
-        if let ruleSet = validationRuleSets[type] where success {
+        if let ruleSet = validationRuleSets[type], success {
             
             let result = ruleSet.validate()
             success = result.isSuccess
@@ -175,8 +174,8 @@ public class FormValidator : NSObject {
     
     // MARK: Private
     
-    func fieldDidChange(notification: NSNotification) {
+    func fieldDidChange(_ notification: Notification) {
         
-        validateForType(ValidationType.Eligibility)
+        validateForType(ValidationType.eligibility)
     }
 }

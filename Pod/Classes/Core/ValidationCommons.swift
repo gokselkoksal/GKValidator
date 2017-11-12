@@ -12,6 +12,8 @@ import Foundation
 
 public typealias TextValidationRule = ValidationRule<String>
 public typealias TextValidationRuleSet = ValidationRuleSet<String>
+public typealias GenericValidationRule = ValidationRule<Void>
+public typealias GenericValidationRuleSet = ValidationRuleSet<Void>
 public typealias TextFieldValidator = FieldValidator<String>
 public typealias TextFieldValidationDelegate = FieldValidationDelegate<String>
 
@@ -21,22 +23,22 @@ public typealias TextFieldValidationDelegate = FieldValidationDelegate<String>
 public enum ValidationType {
     
     /// Validates to see if field's value is valid, so that we can enable submit button.
-    case Eligibility
+    case eligibility
     
     /// Validates to see if field is complete, so that we can proceed to next field or even submit automatically if possible.
-    case Completeness
+    case completeness
     
     /// Validates to see if field's value matches with our criteria (for server, database, etc.) after submit button is tapped.
-    case Submission
+    case submission
     
     /// All of available types in an array.
-    public static let allValues = [Eligibility, Completeness, Submission]
+    public static let allValues = [eligibility, completeness, submission]
 }
 
 /**
  State of the validation. Used by validators to keep current state.
  */
-public struct ValidationState : OptionSetType {
+public struct ValidationState : OptionSet {
     
     public let rawValue: Int
     public init(rawValue: Int) {
@@ -56,26 +58,39 @@ public struct ValidationState : OptionSetType {
 /// Enum to represent a validation result.
 public enum ValidationResult {
     
-    case Success
-    case Failure(errors: [NSError])
-    
-    // MARK: Convenience
+    case success
+    case failure([Error])
+}
+
+public extension ValidationResult {
     
     public var isSuccess: Bool {
         switch self {
-        case .Success:
+        case .success:
             return true
         default:
             return false
         }
     }
     
-    public var errors: [NSError]? {
+    public var errors: [Error]? {
         switch self {
-        case .Failure(let resultingErrors):
+        case .failure(let resultingErrors):
             return resultingErrors
         default:
             return nil
+        }
+    }
+    
+    public init(condition: Bool, error: Error? = nil) {
+        if condition {
+            self = .success
+        } else {
+            if let error = error {
+                self = .failure([error])
+            } else {
+                self = .failure([])
+            }
         }
     }
 }
@@ -86,14 +101,14 @@ public enum ValidationResult {
  Returns a state that might be affected in a way for given validation type.
  - Parameter type: Type of the validation.
  */
-func affectedStateForValidationType(type: ValidationType) -> ValidationState {
+func affectedStateForValidationType(_ type: ValidationType) -> ValidationState {
     
     switch type {
-    case ValidationType.Eligibility:
+    case ValidationType.eligibility:
         return ValidationState.Eligible
-    case ValidationType.Submission:
+    case ValidationType.submission:
         return ValidationState.Submittable
-    case ValidationType.Completeness:
+    case ValidationType.completeness:
         return ValidationState.Complete
     }
 }

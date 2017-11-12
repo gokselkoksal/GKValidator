@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2720A4AF8501187572B754C2 /* Pods_GKValidator_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC263470AEBD5672A3BA8166 /* Pods_GKValidator_Example.framework */; };
+		3396B776170A5B25ED967B14 /* Pods_GKValidator_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F95DCA8F138F57DB224B3F3 /* Pods_GKValidator_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* RegistrationViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -16,7 +16,7 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		626062881BF00FFD00FE0F13 /* UITextField+GKValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 626062871BF00FFD00FE0F13 /* UITextField+GKValidator.swift */; };
 		62E75F151BE8EAA100BA5488 /* RegistrationFormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E75F141BE8EAA100BA5488 /* RegistrationFormValidator.swift */; };
-		6F97D9996221601FB628682A /* Pods_GKValidator_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB37E3F3D37621CEC11FC36A /* Pods_GKValidator_Tests.framework */; };
+		EED27128D85A7945F244966B /* Pods_GKValidator_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE3AD5623F6F8F6CD811305 /* Pods_GKValidator_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,9 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EE99CE5078C04804EFF28B6 /* Pods-GKValidator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKValidator_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GKValidator_Tests/Pods-GKValidator_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		06B2BFECCC297342F92E2B17 /* Pods-GKValidator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKValidator_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GKValidator_Tests/Pods-GKValidator_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		301DAE14766D290F652E5F56 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		38C04001038AD86E1F8E079E /* Pods-GKValidator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKValidator_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GKValidator_Example/Pods-GKValidator_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		38EDFB9EDE4F94EFD75198B9 /* Pods-GKValidator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKValidator_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GKValidator_Tests/Pods-GKValidator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F95DCA8F138F57DB224B3F3 /* Pods_GKValidator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKValidator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* GKValidator_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKValidator_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,11 +46,10 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		626062871BF00FFD00FE0F13 /* UITextField+GKValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+GKValidator.swift"; sourceTree = "<group>"; };
 		62E75F141BE8EAA100BA5488 /* RegistrationFormValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationFormValidator.swift; sourceTree = "<group>"; };
-		A94FDF484DA1FCC7AEC9CB9E /* Pods-GKValidator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKValidator_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GKValidator_Tests/Pods-GKValidator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		87AAC480889AA1008D2EB6FC /* Pods-GKValidator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKValidator_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GKValidator_Example/Pods-GKValidator_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		AA5A3E591292F531E0DD3B1F /* Pods-GKValidator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKValidator_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GKValidator_Example/Pods-GKValidator_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BA06D0190773F88D1A8748ED /* GKValidator.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = GKValidator.podspec; path = ../GKValidator.podspec; sourceTree = "<group>"; };
-		BB37E3F3D37621CEC11FC36A /* Pods_GKValidator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKValidator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CADF9BAA1D2DD168BF6F705E /* Pods-GKValidator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKValidator_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-GKValidator_Example/Pods-GKValidator_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DC263470AEBD5672A3BA8166 /* Pods_GKValidator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKValidator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFE3AD5623F6F8F6CD811305 /* Pods_GKValidator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKValidator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E56D19C339AC86889D9B5E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2720A4AF8501187572B754C2 /* Pods_GKValidator_Example.framework in Frameworks */,
+				3396B776170A5B25ED967B14 /* Pods_GKValidator_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,29 +66,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F97D9996221601FB628682A /* Pods_GKValidator_Tests.framework in Frameworks */,
+				EED27128D85A7945F244966B /* Pods_GKValidator_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2640D5769A3826823A92B1E3 /* Pods */ = {
+		41BAB3F39C93DB64A38CACEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				38C04001038AD86E1F8E079E /* Pods-GKValidator_Example.debug.xcconfig */,
-				CADF9BAA1D2DD168BF6F705E /* Pods-GKValidator_Example.release.xcconfig */,
-				A94FDF484DA1FCC7AEC9CB9E /* Pods-GKValidator_Tests.debug.xcconfig */,
-				0EE99CE5078C04804EFF28B6 /* Pods-GKValidator_Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		4DAA02E7B0A5D3A38DA144A7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DC263470AEBD5672A3BA8166 /* Pods_GKValidator_Example.framework */,
-				BB37E3F3D37621CEC11FC36A /* Pods_GKValidator_Tests.framework */,
+				5F95DCA8F138F57DB224B3F3 /* Pods_GKValidator_Example.framework */,
+				DFE3AD5623F6F8F6CD811305 /* Pods_GKValidator_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -100,8 +89,8 @@
 				607FACD21AFB9204008FA782 /* Example for GKValidator */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
-				2640D5769A3826823A92B1E3 /* Pods */,
-				4DAA02E7B0A5D3A38DA144A7 /* Frameworks */,
+				A7158CCA1DE5CBFF5ACDF775 /* Pods */,
+				41BAB3F39C93DB64A38CACEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -165,6 +154,17 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		A7158CCA1DE5CBFF5ACDF775 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87AAC480889AA1008D2EB6FC /* Pods-GKValidator_Example.debug.xcconfig */,
+				AA5A3E591292F531E0DD3B1F /* Pods-GKValidator_Example.release.xcconfig */,
+				38EDFB9EDE4F94EFD75198B9 /* Pods-GKValidator_Tests.debug.xcconfig */,
+				06B2BFECCC297342F92E2B17 /* Pods-GKValidator_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -172,12 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "GKValidator_Example" */;
 			buildPhases = (
-				C5E3A320C949D9367B3734F0 /* Check Pods Manifest.lock */,
+				64CE3A9197CF7CA2C38E80B2 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				8BA806141132C6E7F688B4BD /* Embed Pods Frameworks */,
-				E459C4086117F0EFE8CAC8EF /* Copy Pods Resources */,
+				E2A16A35F56BD615385AD37F /* [CP] Embed Pods Frameworks */,
+				9CDEC6E9233708BCCDAE3BFD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,12 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "GKValidator_Tests" */;
 			buildPhases = (
-				2CF25ED89EABE66990D3EA10 /* Check Pods Manifest.lock */,
+				2B8139B97FD90A965A4D72D2 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				F1209852B5B5882F82EB2809 /* Embed Pods Frameworks */,
-				D20C50B82F740750FDDF3E3E /* Copy Pods Resources */,
+				528A25472034D5A3CA8EFCA2 /* [CP] Embed Pods Frameworks */,
+				B523DC61290AD5213C4B2FC5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -216,14 +216,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = R6D3RTDSCX;
+						LastSwiftMigration = 0810;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -268,74 +271,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2CF25ED89EABE66990D3EA10 /* Check Pods Manifest.lock */ = {
+		2B8139B97FD90A965A4D72D2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		8BA806141132C6E7F688B4BD /* Embed Pods Frameworks */ = {
+		528A25472034D5A3CA8EFCA2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GKValidator_Example/Pods-GKValidator_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GKValidator_Tests/Pods-GKValidator_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C5E3A320C949D9367B3734F0 /* Check Pods Manifest.lock */ = {
+		64CE3A9197CF7CA2C38E80B2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		D20C50B82F740750FDDF3E3E /* Copy Pods Resources */ = {
+		9CDEC6E9233708BCCDAE3BFD /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GKValidator_Tests/Pods-GKValidator_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E459C4086117F0EFE8CAC8EF /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,19 +331,34 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GKValidator_Example/Pods-GKValidator_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F1209852B5B5882F82EB2809 /* Embed Pods Frameworks */ = {
+		B523DC61290AD5213C4B2FC5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GKValidator_Tests/Pods-GKValidator_Tests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GKValidator_Tests/Pods-GKValidator_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2A16A35F56BD615385AD37F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GKValidator_Example/Pods-GKValidator_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -423,14 +426,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -467,8 +473,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -487,38 +495,48 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38C04001038AD86E1F8E079E /* Pods-GKValidator_Example.debug.xcconfig */;
+			baseConfigurationReference = 87AAC480889AA1008D2EB6FC /* Pods-GKValidator_Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6D3RTDSCX;
 				INFOPLIST_FILE = GKValidator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CADF9BAA1D2DD168BF6F705E /* Pods-GKValidator_Example.release.xcconfig */;
+			baseConfigurationReference = AA5A3E591292F531E0DD3B1F /* Pods-GKValidator_Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R6D3RTDSCX;
 				INFOPLIST_FILE = GKValidator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A94FDF484DA1FCC7AEC9CB9E /* Pods-GKValidator_Tests.debug.xcconfig */;
+			baseConfigurationReference = 38EDFB9EDE4F94EFD75198B9 /* Pods-GKValidator_Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -530,15 +548,18 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GKValidator_Example.app/GKValidator_Example";
 			};
 			name = Debug;
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0EE99CE5078C04804EFF28B6 /* Pods-GKValidator_Tests.release.xcconfig */;
+			baseConfigurationReference = 06B2BFECCC297342F92E2B17 /* Pods-GKValidator_Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -546,7 +567,9 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GKValidator_Example.app/GKValidator_Example";
 			};
 			name = Release;

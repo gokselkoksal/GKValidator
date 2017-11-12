@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension ValidationRule where ValidatableType: StringLiteralConvertible {
+public extension ValidationRule where ValidatableType: CustomStringConvertible {
     
     /**
      Creates a text validation rule for minimum length check.
@@ -16,16 +16,11 @@ public extension ValidationRule where ValidatableType: StringLiteralConvertible 
         - error: Error to return upon failure.
         - minLength: Minimum length of the string.
      */
-    public init(
-        error: ValidationError = ValidationError(code: 0, localizedDescription: nil),
-        minLength: UInt)
-    {
-        self.init(error: error, validationBlock: { value in
-            
-            let string: String? = value as? String
-            let length = string?.gk_length
-            return length >= minLength;
-        });
+    public init(minLength: UInt, error: Error? = nil) {
+        self.init(handler: { value in
+            let condition = value.description.characters.count >= Int(minLength)
+            return ValidationResult(condition: condition, error: error)
+        })
     }
     
     /**
@@ -34,16 +29,11 @@ public extension ValidationRule where ValidatableType: StringLiteralConvertible 
         - error: Error to return upon failure.
         - maxLength: Maximum length of the string.
      */
-    public init(
-        error: ValidationError = ValidationError(code: 0, localizedDescription: nil),
-        maxLength: UInt)
-    {
-        self.init(error: error, validationBlock: { value in
-            
-            let string: String? = value as? String
-            let length = string?.gk_length
-            return length <= maxLength;
-        });
+    public init(maxLength: UInt, error: Error? = nil) {
+        self.init(handler: { value in
+            let condition = value.description.characters.count <= Int(maxLength)
+            return ValidationResult(condition: condition, error: error)
+        })
     }
     
     /**
@@ -52,25 +42,11 @@ public extension ValidationRule where ValidatableType: StringLiteralConvertible 
         - error: Error to return upon failure.
         - maxLength: Character set to match.
      */
-    public init(
-        error: ValidationError = ValidationError(code: 0, localizedDescription: nil),
-        characterSet: NSCharacterSet)
-    {
-        
-        self.init(error: error, validationBlock: { value in
-            
-            let string = value as? String
-            let trimmedString = string?.stringByTrimmingCharactersInSet(characterSet)
-            return trimmedString?.gk_length == 0
-        });
-    }
-}
-
-public extension String {
-    
-    /// Length of the string.
-    public var gk_length: UInt {
-        let length: Int = self.characters.count
-        return (length >= 0) ? UInt(length) : 0;
+    public init(characterSet: CharacterSet, error: Error? = nil) {
+        self.init(handler: { value in
+            let trimmedString = value.description.trimmingCharacters(in: characterSet)
+            let condition = (trimmedString.characters.count == 0)
+            return ValidationResult(condition: condition, error: error)
+        })
     }
 }
