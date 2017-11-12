@@ -123,6 +123,7 @@ open class FormValidator : NSObject {
      - Parameter type: Type of validation.
      - Returns: Validation results in tuples (object, result).
      */
+    @discardableResult
     open func validateForType(_ type: ValidationType) -> [ObjectValidationResultPair] {
         
         guard let fieldDelegates = fieldValidationDelegates, (type == ValidationType.submission ? state.contains(ValidationState.Eligible) : true) else {
@@ -152,7 +153,7 @@ open class FormValidator : NSObject {
             
         if let ruleSet = validationRuleSets[type], success {
             
-            let result = ruleSet.validate()
+            let result = ruleSet.validate(())
             success = result.isSuccess
             resultPairs.append((object: self, result: result))
         }
@@ -174,7 +175,7 @@ open class FormValidator : NSObject {
     
     // MARK: Private
     
-    func fieldDidChange(_ notification: Notification) {
+    @objc func fieldDidChange(_ notification: Notification) {
         
         validateForType(ValidationType.eligibility)
     }
