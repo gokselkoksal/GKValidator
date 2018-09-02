@@ -1,16 +1,16 @@
 PODS:
-  - GKValidator (0.0.1)
+  - GKValidator (2.0.0)
 
 DEPENDENCIES:
   - GKValidator (from `../`)
 
 EXTERNAL SOURCES:
   GKValidator:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  GKValidator: 4c0feaae25779073a42a53f320cf13302526bfa9
+  GKValidator: 4cbea93a61bc3a92e91d3aedb36315ea4c78075f
 
-PODFILE CHECKSUM: 19f7636dcc936648374a9b06e8ea6195aa53157d
+PODFILE CHECKSUM: 660fd4419a7336cbccf764c2cf8278eb86ddd3f8
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.5.3
