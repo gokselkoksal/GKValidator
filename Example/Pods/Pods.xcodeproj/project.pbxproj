@@ -7,320 +7,320 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		065FCF25339142537B6356AFB1CEB4DF /* GKValidator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A1B46A40D05BAA625A87DA362DE3C9A /* GKValidator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		088FCA83CF909295FD763619DCE69064 /* FieldValidationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7936E6EFBE8E8DD05FAAE28DA145AF /* FieldValidationDelegate.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		152965F37E0A7D7A79CAD88293E8E785 /* ValidationRuleSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9778962E85073375EF560B304732856D /* ValidationRuleSet.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		342C75D4DB4E4D40EF050CB1672A8A87 /* GKValidator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8F2631A31B5AC6C65B3D715636B1E2 /* GKValidator-dummy.m */; };
-		3A70E52FBC822422BB4CF4619BC902BD /* Pods-GKValidator_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA1607AA333E58046FB974950174E95D /* Pods-GKValidator_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		56A5DC0BB72A2EEA390DA3CAC05DA257 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6748EBE3A8A785A02C62B3CB13FDB09C /* ValidationError.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		5E9F1FD6103491629AE9D9DB39FBA0CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		6D1BDE61F80E56875C9D6E16F1561BB4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		8301CF8EFDAF88A40F0E7E682EDA7830 /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40ABD1DFCCF78D6F05FC9D435D3A5C02 /* ValidationRule.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8D2BF1577253C94C9F9B54F88EBC30C9 /* ValidationRule+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C4535F13C74416E016508DA8A48661 /* ValidationRule+String.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8DFB1D739CC6FB1069EE99402AC15901 /* Pods-GKValidator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 89B35162A19288BF94590D8ADB624E3C /* Pods-GKValidator_Example-dummy.m */; };
-		8EB2154A6F199D9C8C392890D101541D /* Pods-GKValidator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8E546B9DC5B8C94394F63DDB7C60723 /* Pods-GKValidator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		94302105BF5F3E965CAA7389C66CE5F9 /* Pods-GKValidator_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E4DB83CBE5FD3CB9B604315583767AC /* Pods-GKValidator_Tests-dummy.m */; };
-		ABC277E50E86192C1B645A382627A6DD /* FieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D95EF736A71F4E8430B1C798055C9E /* FieldValidator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		BA67426AE62F9C6734F44751E8267CF6 /* FormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C679FC7C1A02FF29BACB7D1AF7A025A /* FormValidator.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		BAEC889BD5953A461F05AAEDBAF08056 /* ValidationCommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A3A865B509AB8C0889541C9F8A26ED /* ValidationCommons.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		F9188B519C5B7191F50FBF610CB4553D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		095DEB7779B22CC0B01C8CC2D96F7A5A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		33B8A1B9482502262FBFC50B8166AA29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		38ADC0751254DC4F19C0B7EDBABD3390 /* GKValidator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8AB4C91699D2D839A303B2AA892D0F1 /* GKValidator-dummy.m */; };
+		430B05B28D6663674DA852B26853F61A /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606F4F13775BC79770673DE21306FAB /* ValidationRule.swift */; };
+		44562644C297FCFA78305E868BC7B0B7 /* Pods-GKValidator_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C979CDD9D9E9FE2B36CD8A5813578C4 /* Pods-GKValidator_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4888F89EE1AA9B5B670C52297295F713 /* ValidationRule+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8469EDB682E8593F4E7DA04043269087 /* ValidationRule+String.swift */; };
+		4DD303B928517E220DF082C413C0C6A6 /* FieldValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A16E66D7DBD4227F33A6D1FA0A8ABF0 /* FieldValidator.swift */; };
+		4F4CDEF236CEA503448C8D862E5F2A07 /* Pods-GKValidator_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C2A64F6CC05BA991A12EA8CEA9FD922 /* Pods-GKValidator_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		739D6BD82FA526EA22B895C9C1E94529 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		889AB5FC179864C95E0A8C741DBC2388 /* Pods-GKValidator_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AD3E597E238DCCAA0E517455BBD2EE2 /* Pods-GKValidator_Tests-dummy.m */; };
+		9E05B8487A7FAE43BDC2E329A52AD1D0 /* FieldValidationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F869058B29AA6BA6EA3B0F7DA140C60A /* FieldValidationDelegate.swift */; };
+		C0B3EC9E12DFDE5E0F9A1476512FACE4 /* ValidationRuleSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F449337F511D4C3E2AE4642415A6F83 /* ValidationRuleSet.swift */; };
+		C6037571D3E388D278299E2BDDCB488D /* FormValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF5974CA97B6C5A427E9AC654C27C72 /* FormValidator.swift */; };
+		CE2512DF7F4926E767322D4397B7AB63 /* Pods-GKValidator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44FDED3AF90BABEB78058929618EC82F /* Pods-GKValidator_Example-dummy.m */; };
+		DA68FE6ED189FC273E81B230307AF9A2 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F72D6A8D40B6885F23100D32F5B4D4DF /* ValidationError.swift */; };
+		E1B740D86AF943979AF3CB5530867934 /* GKValidator-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B614F17318F7597C40787C74A5A61C90 /* GKValidator-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECC72F9068C5E89D867C8B9ADE145752 /* ValidationCommons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658D5ECB2C70B5DE8DDF685815692F7A /* ValidationCommons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A1418348F46079B57122A62B6B15A03C /* PBXContainerItemProxy */ = {
+		18EF7CE138819E56F417BA219A55A419 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AEFE8CDC8EECA71F3EB36CAA6A5E8D6F;
+			remoteGlobalIDString = 51509865C4F13DE5EEF05415994E1402;
 			remoteInfo = GKValidator;
 		};
-		DE41D5D629AB282CB6F1B2E41384E735 /* PBXContainerItemProxy */ = {
+		FF24C091C1C16855E65FF480994F99D1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AEFE8CDC8EECA71F3EB36CAA6A5E8D6F;
+			remoteGlobalIDString = 51509865C4F13DE5EEF05415994E1402;
 			remoteInfo = GKValidator;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A32D81F1B1FBD9F49E7FCFEA341D3AF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0AF29053A7572A48815CCC6DD6289BF1 /* GKValidator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GKValidator.xcconfig; sourceTree = "<group>"; };
-		0E9CF149122B86B08A23E13E9C58784D /* Pods-GKValidator_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GKValidator_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		15DCA4D52CA5850DE39B2209930FEB10 /* Pods-GKValidator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKValidator_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		1AEA1F5FE5A102161A43103B34530675 /* Pods-GKValidator_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GKValidator_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		32A3A865B509AB8C0889541C9F8A26ED /* ValidationCommons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationCommons.swift; path = Pod/Classes/Core/ValidationCommons.swift; sourceTree = "<group>"; };
-		3E4DB83CBE5FD3CB9B604315583767AC /* Pods-GKValidator_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GKValidator_Tests-dummy.m"; sourceTree = "<group>"; };
-		3F673F940CDF71A4D7689E1D1366AF00 /* Pods-GKValidator_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GKValidator_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		40ABD1DFCCF78D6F05FC9D435D3A5C02 /* ValidationRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ValidationRule.swift; sourceTree = "<group>"; };
-		46D95EF736A71F4E8430B1C798055C9E /* FieldValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FieldValidator.swift; sourceTree = "<group>"; };
-		508147792E7CD5A53E7524CDBFC435FD /* GKValidator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = GKValidator.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		54C4535F13C74416E016508DA8A48661 /* ValidationRule+String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ValidationRule+String.swift"; sourceTree = "<group>"; };
-		59246A5332CD591851BB47F9ABC3464D /* Pods-GKValidator_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GKValidator_Example-resources.sh"; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6748EBE3A8A785A02C62B3CB13FDB09C /* ValidationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationError.swift; path = Pod/Classes/Core/ValidationError.swift; sourceTree = "<group>"; };
-		7A1B46A40D05BAA625A87DA362DE3C9A /* GKValidator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GKValidator-umbrella.h"; sourceTree = "<group>"; };
-		7DD7D0E240BAB14CB1A7A05369F2A197 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8218B435182F41F96348D7E4AAE75822 /* Pods-GKValidator_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GKValidator_Tests-resources.sh"; sourceTree = "<group>"; };
-		89B35162A19288BF94590D8ADB624E3C /* Pods-GKValidator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GKValidator_Example-dummy.m"; sourceTree = "<group>"; };
-		8C679FC7C1A02FF29BACB7D1AF7A025A /* FormValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FormValidator.swift; sourceTree = "<group>"; };
-		9377D219F9238A38B9ED3DF34E954382 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		957BAF04DF821E970166578CB93B1670 /* Pods-GKValidator_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GKValidator_Example-frameworks.sh"; sourceTree = "<group>"; };
-		9778962E85073375EF560B304732856D /* ValidationRuleSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ValidationRuleSet.swift; sourceTree = "<group>"; };
-		A28F9D94D2E5FA05BFEAC68C074DEBB0 /* Pods_GKValidator_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKValidator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A749BAC39C8ACBB653BC95203FAC7006 /* Pods-GKValidator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GKValidator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		AB8F2631A31B5AC6C65B3D715636B1E2 /* GKValidator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GKValidator-dummy.m"; sourceTree = "<group>"; };
-		BA1607AA333E58046FB974950174E95D /* Pods-GKValidator_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GKValidator_Tests-umbrella.h"; sourceTree = "<group>"; };
-		BFC0C2F3EF1DCD50905C40A44AAABF83 /* Pods-GKValidator_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GKValidator_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C04D7EE2056BD72A892B6123D1FAD042 /* Pods-GKValidator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GKValidator_Example.modulemap"; sourceTree = "<group>"; };
-		C542182561A0E6700AE967418997D7B4 /* Pods-GKValidator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKValidator_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C9FA9E24C3100538493ED924B71D4C19 /* Pods-GKValidator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKValidator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		CE49DC4036198CD2B80C403B03BFF94E /* Pods_GKValidator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GKValidator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D739A1026FBB2038DE4B1D4C7F851962 /* GKValidator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GKValidator.modulemap; sourceTree = "<group>"; };
-		D9F029A1A0CD217D0FBD36E6DF89DF7E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		DF7936E6EFBE8E8DD05FAAE28DA145AF /* FieldValidationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FieldValidationDelegate.swift; sourceTree = "<group>"; };
-		E26A7D71FB61D01819159CF6B196F034 /* Pods-GKValidator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKValidator_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E59557C0AB257442EC1CD3489E884C9F /* GKValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GKValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8E546B9DC5B8C94394F63DDB7C60723 /* Pods-GKValidator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GKValidator_Example-umbrella.h"; sourceTree = "<group>"; };
-		EBBB9991FAF726B1BB51EFCD11A68F6F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2E15D98D5A31EC7745664ED1403AC63 /* GKValidator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GKValidator-prefix.pch"; sourceTree = "<group>"; };
-		FF1E065A98D69D3FFFCF28B516CE2851 /* Pods-GKValidator_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GKValidator_Tests.modulemap"; sourceTree = "<group>"; };
+		09AA53F6083C625C96879B553099C5EB /* Pods-GKValidator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GKValidator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		130B36697FEB65C3D2F647C4415F3107 /* GKValidator */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GKValidator; path = GKValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C2B6CB766E6FFFC31E47ED0BF70F411 /* Pods-GKValidator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GKValidator_Example.modulemap"; sourceTree = "<group>"; };
+		1C979CDD9D9E9FE2B36CD8A5813578C4 /* Pods-GKValidator_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GKValidator_Tests-umbrella.h"; sourceTree = "<group>"; };
+		21972C8ADCDDE11412C66BBB57D99C7B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		247A87ABABD89A0506718A82C1F47DA7 /* GKValidator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GKValidator-prefix.pch"; sourceTree = "<group>"; };
+		2A16E66D7DBD4227F33A6D1FA0A8ABF0 /* FieldValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FieldValidator.swift; sourceTree = "<group>"; };
+		2AD3E597E238DCCAA0E517455BBD2EE2 /* Pods-GKValidator_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GKValidator_Tests-dummy.m"; sourceTree = "<group>"; };
+		2C1F0837834C29173DD1E6CE8EE91574 /* Pods-GKValidator_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GKValidator_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		2FD3AB8D4350C782C555373270EE2A50 /* GKValidator-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GKValidator-Info.plist"; sourceTree = "<group>"; };
+		44FDED3AF90BABEB78058929618EC82F /* Pods-GKValidator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GKValidator_Example-dummy.m"; sourceTree = "<group>"; };
+		464811FB6E1F377BB2A8495C96312F53 /* Pods-GKValidator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKValidator_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4E0B4247D1E270961CC84934C07893F5 /* Pods-GKValidator_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GKValidator_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5516FFD9779335EE5232D191A8316D85 /* Pods-GKValidator_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GKValidator_Example-frameworks.sh"; sourceTree = "<group>"; };
+		57B9A1AF46D86A3E79BE561DE4C21FD7 /* GKValidator.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GKValidator.modulemap; sourceTree = "<group>"; };
+		61570238A3F5E342B990A10124BA9AFC /* Pods-GKValidator_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GKValidator_Example"; path = Pods_GKValidator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		658D5ECB2C70B5DE8DDF685815692F7A /* ValidationCommons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationCommons.swift; path = Pod/Classes/Core/ValidationCommons.swift; sourceTree = "<group>"; };
+		668153864D1CEF49F015FA35F014FE25 /* Pods-GKValidator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKValidator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6820A4EA396F4E00F5634C0E45CEC4F5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6C2A64F6CC05BA991A12EA8CEA9FD922 /* Pods-GKValidator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GKValidator_Example-umbrella.h"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7B154C8A77078C9C428AD03B27C5901F /* Pods-GKValidator_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GKValidator_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7BF5974CA97B6C5A427E9AC654C27C72 /* FormValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FormValidator.swift; sourceTree = "<group>"; };
+		80C89396FAE8514B325C3DA6CE518930 /* Pods-GKValidator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKValidator_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8469EDB682E8593F4E7DA04043269087 /* ValidationRule+String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ValidationRule+String.swift"; sourceTree = "<group>"; };
+		8924FFC4A69307EBC55660C6548662C9 /* Pods-GKValidator_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GKValidator_Example-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F449337F511D4C3E2AE4642415A6F83 /* ValidationRuleSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ValidationRuleSet.swift; sourceTree = "<group>"; };
+		AC5FDFE44A2AF722CAFC7B29352D0497 /* Pods-GKValidator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKValidator_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B614F17318F7597C40787C74A5A61C90 /* GKValidator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GKValidator-umbrella.h"; sourceTree = "<group>"; };
+		B8AB4C91699D2D839A303B2AA892D0F1 /* GKValidator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GKValidator-dummy.m"; sourceTree = "<group>"; };
+		B8E33933EACBA1AF01BE8B59189C3E14 /* GKValidator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GKValidator.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C4DDD624C38EE2D7925309A506AC1204 /* Pods-GKValidator_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GKValidator_Tests"; path = Pods_GKValidator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAF8E5EA0C54F239B355CCD9635F07F0 /* Pods-GKValidator_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GKValidator_Tests-Info.plist"; sourceTree = "<group>"; };
+		CC7448BBB7E4DEEFBD685EEDC7FB35FF /* Pods-GKValidator_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GKValidator_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E2A69C56B3B3CD0D0902521B1FBEC519 /* Pods-GKValidator_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GKValidator_Tests.modulemap"; sourceTree = "<group>"; };
+		E606F4F13775BC79770673DE21306FAB /* ValidationRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ValidationRule.swift; sourceTree = "<group>"; };
+		E9B90B1009D8B1D4C0F7E829F19D971D /* GKValidator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GKValidator.debug.xcconfig; sourceTree = "<group>"; };
+		F72D6A8D40B6885F23100D32F5B4D4DF /* ValidationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationError.swift; path = Pod/Classes/Core/ValidationError.swift; sourceTree = "<group>"; };
+		F869058B29AA6BA6EA3B0F7DA140C60A /* FieldValidationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FieldValidationDelegate.swift; sourceTree = "<group>"; };
+		FB732652C4F1F505E1A70FB25B6D7CB1 /* GKValidator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GKValidator.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		8EECDD6E1F530C8E5D3F990FF7D50736 /* Frameworks */ = {
+		B052E379CD5B3345B3CF2D4C744559EA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E9F1FD6103491629AE9D9DB39FBA0CA /* Foundation.framework in Frameworks */,
+				095DEB7779B22CC0B01C8CC2D96F7A5A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B31D0CCEDCEC0F826CF5390D52AEEEAA /* Frameworks */ = {
+		B5AE8A5BE81A4AD83AB156469F38C1AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9188B519C5B7191F50FBF610CB4553D /* Foundation.framework in Frameworks */,
+				739D6BD82FA526EA22B895C9C1E94529 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7644400E62E06527C099675CDBAA357 /* Frameworks */ = {
+		EC9892E7A64B05437B5E01FDEC6B3CBD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D1BDE61F80E56875C9D6E16F1561BB4 /* Foundation.framework in Frameworks */,
+				33B8A1B9482502262FBFC50B8166AA29 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1CDEA6EC66691C16B98672600E93DE0E /* Pod */ = {
+		15149A1BC09362FF2C447EB86349B2F9 /* Validators */ = {
 			isa = PBXGroup;
 			children = (
-				508147792E7CD5A53E7524CDBFC435FD /* GKValidator.podspec */,
-				9377D219F9238A38B9ED3DF34E954382 /* LICENSE */,
-				D9F029A1A0CD217D0FBD36E6DF89DF7E /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		2FA661EA914DD07D9EAFAA49399EB957 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D739A1026FBB2038DE4B1D4C7F851962 /* GKValidator.modulemap */,
-				0AF29053A7572A48815CCC6DD6289BF1 /* GKValidator.xcconfig */,
-				AB8F2631A31B5AC6C65B3D715636B1E2 /* GKValidator-dummy.m */,
-				F2E15D98D5A31EC7745664ED1403AC63 /* GKValidator-prefix.pch */,
-				7A1B46A40D05BAA625A87DA362DE3C9A /* GKValidator-umbrella.h */,
-				EBBB9991FAF726B1BB51EFCD11A68F6F /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/GKValidator";
-			sourceTree = "<group>";
-		};
-		34C993AE88D730CD2B0838C6C448D9C2 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EFC88A8E361CB43133AF5C2340040373 /* Pods-GKValidator_Example */,
-				AABF0EFEC038CD66E6EFD5EA70BEAB17 /* Pods-GKValidator_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		369595169FA1BCA113512A1C4B9CF39E /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7EBCF1705F6E4FDADF3A5215D3B05A5B /* GKValidator */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		628F4A446B1F494B1F7BD0976C0F4839 /* Validators */ = {
-			isa = PBXGroup;
-			children = (
-				DF7936E6EFBE8E8DD05FAAE28DA145AF /* FieldValidationDelegate.swift */,
-				46D95EF736A71F4E8430B1C798055C9E /* FieldValidator.swift */,
-				8C679FC7C1A02FF29BACB7D1AF7A025A /* FormValidator.swift */,
+				F869058B29AA6BA6EA3B0F7DA140C60A /* FieldValidationDelegate.swift */,
+				2A16E66D7DBD4227F33A6D1FA0A8ABF0 /* FieldValidator.swift */,
+				7BF5974CA97B6C5A427E9AC654C27C72 /* FormValidator.swift */,
 			);
 			name = Validators;
 			path = Pod/Classes/Core/Validators;
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		5622E9AC43F36660FB5986DDABC2A482 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				369595169FA1BCA113512A1C4B9CF39E /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				EDD2152331B83573F3680EC4D95718BC /* Products */,
-				34C993AE88D730CD2B0838C6C448D9C2 /* Targets Support Files */,
+				BACE734A4E1DD9884218665DB66F9F2B /* GKValidator */,
 			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		7EBCF1705F6E4FDADF3A5215D3B05A5B /* GKValidator */ = {
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				32A3A865B509AB8C0889541C9F8A26ED /* ValidationCommons.swift */,
-				6748EBE3A8A785A02C62B3CB13FDB09C /* ValidationError.swift */,
-				1CDEA6EC66691C16B98672600E93DE0E /* Pod */,
-				D7ABE287792654054B654A118FD6FADF /* Rules */,
-				2FA661EA914DD07D9EAFAA49399EB957 /* Support Files */,
-				628F4A446B1F494B1F7BD0976C0F4839 /* Validators */,
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5DDFBEDB3CB7E86B50E2C12644A7FDC1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				57B9A1AF46D86A3E79BE561DE4C21FD7 /* GKValidator.modulemap */,
+				B8AB4C91699D2D839A303B2AA892D0F1 /* GKValidator-dummy.m */,
+				2FD3AB8D4350C782C555373270EE2A50 /* GKValidator-Info.plist */,
+				247A87ABABD89A0506718A82C1F47DA7 /* GKValidator-prefix.pch */,
+				B614F17318F7597C40787C74A5A61C90 /* GKValidator-umbrella.h */,
+				E9B90B1009D8B1D4C0F7E829F19D971D /* GKValidator.debug.xcconfig */,
+				FB732652C4F1F505E1A70FB25B6D7CB1 /* GKValidator.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/GKValidator";
+			sourceTree = "<group>";
+		};
+		BACE734A4E1DD9884218665DB66F9F2B /* GKValidator */ = {
+			isa = PBXGroup;
+			children = (
+				658D5ECB2C70B5DE8DDF685815692F7A /* ValidationCommons.swift */,
+				F72D6A8D40B6885F23100D32F5B4D4DF /* ValidationError.swift */,
+				DC61326275924B1C89137EF339AE2654 /* Pod */,
+				C3BA9237A2A27E9FCF33F2FC099F9A91 /* Rules */,
+				5DDFBEDB3CB7E86B50E2C12644A7FDC1 /* Support Files */,
+				15149A1BC09362FF2C447EB86349B2F9 /* Validators */,
 			);
 			name = GKValidator;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		AABF0EFEC038CD66E6EFD5EA70BEAB17 /* Pods-GKValidator_Tests */ = {
+		C3BA9237A2A27E9FCF33F2FC099F9A91 /* Rules */ = {
 			isa = PBXGroup;
 			children = (
-				7DD7D0E240BAB14CB1A7A05369F2A197 /* Info.plist */,
-				FF1E065A98D69D3FFFCF28B516CE2851 /* Pods-GKValidator_Tests.modulemap */,
-				BFC0C2F3EF1DCD50905C40A44AAABF83 /* Pods-GKValidator_Tests-acknowledgements.markdown */,
-				0E9CF149122B86B08A23E13E9C58784D /* Pods-GKValidator_Tests-acknowledgements.plist */,
-				3E4DB83CBE5FD3CB9B604315583767AC /* Pods-GKValidator_Tests-dummy.m */,
-				1AEA1F5FE5A102161A43103B34530675 /* Pods-GKValidator_Tests-frameworks.sh */,
-				8218B435182F41F96348D7E4AAE75822 /* Pods-GKValidator_Tests-resources.sh */,
-				BA1607AA333E58046FB974950174E95D /* Pods-GKValidator_Tests-umbrella.h */,
-				C9FA9E24C3100538493ED924B71D4C19 /* Pods-GKValidator_Tests.debug.xcconfig */,
-				15DCA4D52CA5850DE39B2209930FEB10 /* Pods-GKValidator_Tests.release.xcconfig */,
-			);
-			name = "Pods-GKValidator_Tests";
-			path = "Target Support Files/Pods-GKValidator_Tests";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D7ABE287792654054B654A118FD6FADF /* Rules */ = {
-			isa = PBXGroup;
-			children = (
-				40ABD1DFCCF78D6F05FC9D435D3A5C02 /* ValidationRule.swift */,
-				54C4535F13C74416E016508DA8A48661 /* ValidationRule+String.swift */,
-				9778962E85073375EF560B304732856D /* ValidationRuleSet.swift */,
+				E606F4F13775BC79770673DE21306FAB /* ValidationRule.swift */,
+				8469EDB682E8593F4E7DA04043269087 /* ValidationRule+String.swift */,
+				9F449337F511D4C3E2AE4642415A6F83 /* ValidationRuleSet.swift */,
 			);
 			name = Rules;
 			path = Pod/Classes/Core/Rules;
 			sourceTree = "<group>";
 		};
-		EDD2152331B83573F3680EC4D95718BC /* Products */ = {
+		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				E59557C0AB257442EC1CD3489E884C9F /* GKValidator.framework */,
-				A28F9D94D2E5FA05BFEAC68C074DEBB0 /* Pods_GKValidator_Example.framework */,
-				CE49DC4036198CD2B80C403B03BFF94E /* Pods_GKValidator_Tests.framework */,
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				5622E9AC43F36660FB5986DDABC2A482 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				F18A61B5D26AC19D81ACDFD8AD6534AD /* Products */,
+				F077E3E607AAB2EE1EFB2D5F75589411 /* Targets Support Files */,
 			);
-			name = Products;
 			sourceTree = "<group>";
 		};
-		EFC88A8E361CB43133AF5C2340040373 /* Pods-GKValidator_Example */ = {
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A32D81F1B1FBD9F49E7FCFEA341D3AF /* Info.plist */,
-				C04D7EE2056BD72A892B6123D1FAD042 /* Pods-GKValidator_Example.modulemap */,
-				3F673F940CDF71A4D7689E1D1366AF00 /* Pods-GKValidator_Example-acknowledgements.markdown */,
-				A749BAC39C8ACBB653BC95203FAC7006 /* Pods-GKValidator_Example-acknowledgements.plist */,
-				89B35162A19288BF94590D8ADB624E3C /* Pods-GKValidator_Example-dummy.m */,
-				957BAF04DF821E970166578CB93B1670 /* Pods-GKValidator_Example-frameworks.sh */,
-				59246A5332CD591851BB47F9ABC3464D /* Pods-GKValidator_Example-resources.sh */,
-				E8E546B9DC5B8C94394F63DDB7C60723 /* Pods-GKValidator_Example-umbrella.h */,
-				E26A7D71FB61D01819159CF6B196F034 /* Pods-GKValidator_Example.debug.xcconfig */,
-				C542182561A0E6700AE967418997D7B4 /* Pods-GKValidator_Example.release.xcconfig */,
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC61326275924B1C89137EF339AE2654 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B8E33933EACBA1AF01BE8B59189C3E14 /* GKValidator.podspec */,
+				6820A4EA396F4E00F5634C0E45CEC4F5 /* LICENSE */,
+				21972C8ADCDDE11412C66BBB57D99C7B /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		E71182409D7D2BFEDF6EF70BDD224FE4 /* Pods-GKValidator_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E2A69C56B3B3CD0D0902521B1FBEC519 /* Pods-GKValidator_Tests.modulemap */,
+				CC7448BBB7E4DEEFBD685EEDC7FB35FF /* Pods-GKValidator_Tests-acknowledgements.markdown */,
+				7B154C8A77078C9C428AD03B27C5901F /* Pods-GKValidator_Tests-acknowledgements.plist */,
+				2AD3E597E238DCCAA0E517455BBD2EE2 /* Pods-GKValidator_Tests-dummy.m */,
+				2C1F0837834C29173DD1E6CE8EE91574 /* Pods-GKValidator_Tests-frameworks.sh */,
+				CAF8E5EA0C54F239B355CCD9635F07F0 /* Pods-GKValidator_Tests-Info.plist */,
+				1C979CDD9D9E9FE2B36CD8A5813578C4 /* Pods-GKValidator_Tests-umbrella.h */,
+				668153864D1CEF49F015FA35F014FE25 /* Pods-GKValidator_Tests.debug.xcconfig */,
+				80C89396FAE8514B325C3DA6CE518930 /* Pods-GKValidator_Tests.release.xcconfig */,
+			);
+			name = "Pods-GKValidator_Tests";
+			path = "Target Support Files/Pods-GKValidator_Tests";
+			sourceTree = "<group>";
+		};
+		E8663331D7104B1C11A1B394EA460722 /* Pods-GKValidator_Example */ = {
+			isa = PBXGroup;
+			children = (
+				1C2B6CB766E6FFFC31E47ED0BF70F411 /* Pods-GKValidator_Example.modulemap */,
+				4E0B4247D1E270961CC84934C07893F5 /* Pods-GKValidator_Example-acknowledgements.markdown */,
+				09AA53F6083C625C96879B553099C5EB /* Pods-GKValidator_Example-acknowledgements.plist */,
+				44FDED3AF90BABEB78058929618EC82F /* Pods-GKValidator_Example-dummy.m */,
+				5516FFD9779335EE5232D191A8316D85 /* Pods-GKValidator_Example-frameworks.sh */,
+				8924FFC4A69307EBC55660C6548662C9 /* Pods-GKValidator_Example-Info.plist */,
+				6C2A64F6CC05BA991A12EA8CEA9FD922 /* Pods-GKValidator_Example-umbrella.h */,
+				AC5FDFE44A2AF722CAFC7B29352D0497 /* Pods-GKValidator_Example.debug.xcconfig */,
+				464811FB6E1F377BB2A8495C96312F53 /* Pods-GKValidator_Example.release.xcconfig */,
 			);
 			name = "Pods-GKValidator_Example";
 			path = "Target Support Files/Pods-GKValidator_Example";
 			sourceTree = "<group>";
 		};
+		F077E3E607AAB2EE1EFB2D5F75589411 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E8663331D7104B1C11A1B394EA460722 /* Pods-GKValidator_Example */,
+				E71182409D7D2BFEDF6EF70BDD224FE4 /* Pods-GKValidator_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F18A61B5D26AC19D81ACDFD8AD6534AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				130B36697FEB65C3D2F647C4415F3107 /* GKValidator */,
+				61570238A3F5E342B990A10124BA9AFC /* Pods-GKValidator_Example */,
+				C4DDD624C38EE2D7925309A506AC1204 /* Pods-GKValidator_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		6F8B09D3BB36A66797F35686FE1565E1 /* Headers */ = {
+		3674F9ED93CDF9335BF12FA836E66D88 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EB2154A6F199D9C8C392890D101541D /* Pods-GKValidator_Example-umbrella.h in Headers */,
+				E1B740D86AF943979AF3CB5530867934 /* GKValidator-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8EE8986D07430A4B94936E63F9E1C7F1 /* Headers */ = {
+		67D39C2FE61D25F0EBB04D4A72A49E49 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				065FCF25339142537B6356AFB1CEB4DF /* GKValidator-umbrella.h in Headers */,
+				44562644C297FCFA78305E868BC7B0B7 /* Pods-GKValidator_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DF1533CC23F3B211931CDF5DE8FC20B6 /* Headers */ = {
+		C71D8B425BC5DDDDE1437C1D28856CB0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A70E52FBC822422BB4CF4619BC902BD /* Pods-GKValidator_Tests-umbrella.h in Headers */,
+				4F4CDEF236CEA503448C8D862E5F2A07 /* Pods-GKValidator_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5DB59879A76D4D3929377165E88EAE52 /* Pods-GKValidator_Tests */ = {
+		289D732BC108A3A49294C12A52F049E6 /* Pods-GKValidator_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 03FC3C838F7B24B02F88CB4D0EF5870D /* Build configuration list for PBXNativeTarget "Pods-GKValidator_Tests" */;
+			buildConfigurationList = 161B7C8A5A13FEA31EF8ED2EAC9C39C2 /* Build configuration list for PBXNativeTarget "Pods-GKValidator_Tests" */;
 			buildPhases = (
-				2AC61E42437854411068D3B2213A972C /* Sources */,
-				8EECDD6E1F530C8E5D3F990FF7D50736 /* Frameworks */,
-				DF1533CC23F3B211931CDF5DE8FC20B6 /* Headers */,
+				67D39C2FE61D25F0EBB04D4A72A49E49 /* Headers */,
+				BD20270EBB8E5891A0464202D47C8114 /* Sources */,
+				EC9892E7A64B05437B5E01FDEC6B3CBD /* Frameworks */,
+				ABE0B66B2E28F6BDE674BBA8F435C165 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D284C87BAC1B9DD11F50C14E000F4DFB /* PBXTargetDependency */,
+				18340515A30450E35AD4FCA4DEF680B5 /* PBXTargetDependency */,
 			);
 			name = "Pods-GKValidator_Tests";
-			productName = "Pods-GKValidator_Tests";
-			productReference = CE49DC4036198CD2B80C403B03BFF94E /* Pods_GKValidator_Tests.framework */;
+			productName = Pods_GKValidator_Tests;
+			productReference = C4DDD624C38EE2D7925309A506AC1204 /* Pods-GKValidator_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
-		AEFE8CDC8EECA71F3EB36CAA6A5E8D6F /* GKValidator */ = {
+		51509865C4F13DE5EEF05415994E1402 /* GKValidator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A9F15E615F433EBCADB00C9F40E14A39 /* Build configuration list for PBXNativeTarget "GKValidator" */;
+			buildConfigurationList = 09797C3026B86E40B2DFE19E5DD7D761 /* Build configuration list for PBXNativeTarget "GKValidator" */;
 			buildPhases = (
-				11C7DC79D7B26F181D456E606BF23A78 /* Sources */,
-				E7644400E62E06527C099675CDBAA357 /* Frameworks */,
-				8EE8986D07430A4B94936E63F9E1C7F1 /* Headers */,
+				3674F9ED93CDF9335BF12FA836E66D88 /* Headers */,
+				AD0FFBA481719AE691ECB039761035C4 /* Sources */,
+				B052E379CD5B3345B3CF2D4C744559EA /* Frameworks */,
+				CE616111C7B4D84B4624AE8A807105ED /* Resources */,
 			);
 			buildRules = (
 			);
@@ -328,117 +328,137 @@
 			);
 			name = GKValidator;
 			productName = GKValidator;
-			productReference = E59557C0AB257442EC1CD3489E884C9F /* GKValidator.framework */;
+			productReference = 130B36697FEB65C3D2F647C4415F3107 /* GKValidator */;
 			productType = "com.apple.product-type.framework";
 		};
-		B0195DE83B810B4B3FC386B51944ECA8 /* Pods-GKValidator_Example */ = {
+		B086287FE32D07C09DA8EE83639FAB74 /* Pods-GKValidator_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 615C7EB5A8AFA6411BBB2506D82BBF9F /* Build configuration list for PBXNativeTarget "Pods-GKValidator_Example" */;
+			buildConfigurationList = 536A28C4BD2F03D298D5CF74B689D6A4 /* Build configuration list for PBXNativeTarget "Pods-GKValidator_Example" */;
 			buildPhases = (
-				AAEE5CB14AAF664C8169140F9EFF90CE /* Sources */,
-				B31D0CCEDCEC0F826CF5390D52AEEEAA /* Frameworks */,
-				6F8B09D3BB36A66797F35686FE1565E1 /* Headers */,
+				C71D8B425BC5DDDDE1437C1D28856CB0 /* Headers */,
+				395C50EB9435C2002FBC3E37459DE3BA /* Sources */,
+				B5AE8A5BE81A4AD83AB156469F38C1AD /* Frameworks */,
+				D663CACF3E78B2F844FCC5872FE482CA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6F6907C8EB01CA2F84D45ED7B466EEC2 /* PBXTargetDependency */,
+				03809C86276B604F6EE8A296B739C8F0 /* PBXTargetDependency */,
 			);
 			name = "Pods-GKValidator_Example";
-			productName = "Pods-GKValidator_Example";
-			productReference = A28F9D94D2E5FA05BFEAC68C074DEBB0 /* Pods_GKValidator_Example.framework */;
+			productName = Pods_GKValidator_Example;
+			productReference = 61570238A3F5E342B990A10124BA9AFC /* Pods-GKValidator_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 1210;
-				TargetAttributes = {
-					AEFE8CDC8EECA71F3EB36CAA6A5E8D6F = {
-						LastSwiftMigration = 1210;
-					};
-				};
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = EDD2152331B83573F3680EC4D95718BC /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F18A61B5D26AC19D81ACDFD8AD6534AD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AEFE8CDC8EECA71F3EB36CAA6A5E8D6F /* GKValidator */,
-				B0195DE83B810B4B3FC386B51944ECA8 /* Pods-GKValidator_Example */,
-				5DB59879A76D4D3929377165E88EAE52 /* Pods-GKValidator_Tests */,
+				51509865C4F13DE5EEF05415994E1402 /* GKValidator */,
+				B086287FE32D07C09DA8EE83639FAB74 /* Pods-GKValidator_Example */,
+				289D732BC108A3A49294C12A52F049E6 /* Pods-GKValidator_Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		ABE0B66B2E28F6BDE674BBA8F435C165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE616111C7B4D84B4624AE8A807105ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D663CACF3E78B2F844FCC5872FE482CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		11C7DC79D7B26F181D456E606BF23A78 /* Sources */ = {
+		395C50EB9435C2002FBC3E37459DE3BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				088FCA83CF909295FD763619DCE69064 /* FieldValidationDelegate.swift in Sources */,
-				ABC277E50E86192C1B645A382627A6DD /* FieldValidator.swift in Sources */,
-				BA67426AE62F9C6734F44751E8267CF6 /* FormValidator.swift in Sources */,
-				342C75D4DB4E4D40EF050CB1672A8A87 /* GKValidator-dummy.m in Sources */,
-				BAEC889BD5953A461F05AAEDBAF08056 /* ValidationCommons.swift in Sources */,
-				56A5DC0BB72A2EEA390DA3CAC05DA257 /* ValidationError.swift in Sources */,
-				8D2BF1577253C94C9F9B54F88EBC30C9 /* ValidationRule+String.swift in Sources */,
-				8301CF8EFDAF88A40F0E7E682EDA7830 /* ValidationRule.swift in Sources */,
-				152965F37E0A7D7A79CAD88293E8E785 /* ValidationRuleSet.swift in Sources */,
+				CE2512DF7F4926E767322D4397B7AB63 /* Pods-GKValidator_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2AC61E42437854411068D3B2213A972C /* Sources */ = {
+		AD0FFBA481719AE691ECB039761035C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94302105BF5F3E965CAA7389C66CE5F9 /* Pods-GKValidator_Tests-dummy.m in Sources */,
+				9E05B8487A7FAE43BDC2E329A52AD1D0 /* FieldValidationDelegate.swift in Sources */,
+				4DD303B928517E220DF082C413C0C6A6 /* FieldValidator.swift in Sources */,
+				C6037571D3E388D278299E2BDDCB488D /* FormValidator.swift in Sources */,
+				38ADC0751254DC4F19C0B7EDBABD3390 /* GKValidator-dummy.m in Sources */,
+				ECC72F9068C5E89D867C8B9ADE145752 /* ValidationCommons.swift in Sources */,
+				DA68FE6ED189FC273E81B230307AF9A2 /* ValidationError.swift in Sources */,
+				430B05B28D6663674DA852B26853F61A /* ValidationRule.swift in Sources */,
+				4888F89EE1AA9B5B670C52297295F713 /* ValidationRule+String.swift in Sources */,
+				C0B3EC9E12DFDE5E0F9A1476512FACE4 /* ValidationRuleSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AAEE5CB14AAF664C8169140F9EFF90CE /* Sources */ = {
+		BD20270EBB8E5891A0464202D47C8114 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DFB1D739CC6FB1069EE99402AC15901 /* Pods-GKValidator_Example-dummy.m in Sources */,
+				889AB5FC179864C95E0A8C741DBC2388 /* Pods-GKValidator_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6F6907C8EB01CA2F84D45ED7B466EEC2 /* PBXTargetDependency */ = {
+		03809C86276B604F6EE8A296B739C8F0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GKValidator;
-			target = AEFE8CDC8EECA71F3EB36CAA6A5E8D6F /* GKValidator */;
-			targetProxy = DE41D5D629AB282CB6F1B2E41384E735 /* PBXContainerItemProxy */;
+			target = 51509865C4F13DE5EEF05415994E1402 /* GKValidator */;
+			targetProxy = 18EF7CE138819E56F417BA219A55A419 /* PBXContainerItemProxy */;
 		};
-		D284C87BAC1B9DD11F50C14E000F4DFB /* PBXTargetDependency */ = {
+		18340515A30450E35AD4FCA4DEF680B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GKValidator;
-			target = AEFE8CDC8EECA71F3EB36CAA6A5E8D6F /* GKValidator */;
-			targetProxy = A1418348F46079B57122A62B6B15A03C /* PBXContainerItemProxy */;
+			target = 51509865C4F13DE5EEF05415994E1402 /* GKValidator */;
+			targetProxy = FF24C091C1C16855E65FF480994F99D1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		12FE025476A30F00F12444E0B07168AF /* Release */ = {
+		06AFD51949A54B01185C74242520F48B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0AF29053A7572A48815CCC6DD6289BF1 /* GKValidator.xcconfig */;
+			baseConfigurationReference = 80C89396FAE8514B325C3DA6CE518930 /* Pods-GKValidator_Tests.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -447,18 +467,19 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/GKValidator/GKValidator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GKValidator/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-GKValidator_Tests/Pods-GKValidator_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/GKValidator/GKValidator.modulemap";
-				PRODUCT_MODULE_NAME = GKValidator;
-				PRODUCT_NAME = GKValidator;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GKValidator_Tests/Pods-GKValidator_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -466,7 +487,7 @@
 			};
 			name = Release;
 		};
-		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -500,8 +521,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -521,25 +540,24 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-				TVOS_DEPLOYMENT_TARGET = 10.0;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
 		};
-		1D3A47E9A8D036E9A6C7167222743E52 /* Release */ = {
+		3D1DE098ADF85B1F0139BF4A29184362 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C542182561A0E6700AE967418997D7B4 /* Pods-GKValidator_Example.release.xcconfig */;
+			baseConfigurationReference = 668153864D1CEF49F015FA35F014FE25 /* Pods-GKValidator_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -548,8 +566,41 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GKValidator_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-GKValidator_Tests/Pods-GKValidator_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GKValidator_Tests/Pods-GKValidator_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5CBC2B8700A2C272528A319155052799 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC5FDFE44A2AF722CAFC7B29352D0497 /* Pods-GKValidator_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-GKValidator_Example/Pods-GKValidator_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GKValidator_Example/Pods-GKValidator_Example.modulemap";
@@ -560,19 +611,16 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		3609E09CC50A193DD0995DE6EFAC15A0 /* Debug */ = {
+		751B7AF7C2FDA8163BAD2EE951C41395 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0AF29053A7572A48815CCC6DD6289BF1 /* GKValidator.xcconfig */;
+			baseConfigurationReference = FB732652C4F1F505E1A70FB25B6D7CB1 /* GKValidator.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -582,8 +630,9 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GCC_PREFIX_HEADER = "Target Support Files/GKValidator/GKValidator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/GKValidator/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/GKValidator/GKValidator-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GKValidator/GKValidator.modulemap";
 				PRODUCT_MODULE_NAME = GKValidator;
@@ -591,20 +640,19 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		3F8A40B23F0EBFA67C0597D61B8C873E /* Debug */ = {
+		B59D2532F664A854441BD0FE229F222E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E26A7D71FB61D01819159CF6B196F034 /* Pods-GKValidator_Example.debug.xcconfig */;
+			baseConfigurationReference = 464811FB6E1F377BB2A8495C96312F53 /* Pods-GKValidator_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -613,8 +661,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GKValidator_Example/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-GKValidator_Example/Pods-GKValidator_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GKValidator_Example/Pods-GKValidator_Example.modulemap";
@@ -625,75 +674,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6AB4E1DB858DE414F7EEBD6FDA59CC38 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C9FA9E24C3100538493ED924B71D4C19 /* Pods-GKValidator_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GKValidator_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GKValidator_Tests/Pods-GKValidator_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F0BCCCD4E0C14F36DB559F8945D2D507 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15DCA4D52CA5850DE39B2209930FEB10 /* Pods-GKValidator_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-GKValidator_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GKValidator_Tests/Pods-GKValidator_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -701,7 +681,7 @@
 			};
 			name = Release;
 		};
-		FDB2FC4A1E5891381CD9D922145497F1 /* Release */ = {
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -735,8 +715,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -753,57 +731,88 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-				TVOS_DEPLOYMENT_TARGET = 10.0;
-				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
+		};
+		EE4D2A51B6074EB1A73E466BBB812F87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9B90B1009D8B1D4C0F7E829F19D971D /* GKValidator.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GKValidator/GKValidator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GKValidator/GKValidator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/GKValidator/GKValidator.modulemap";
+				PRODUCT_MODULE_NAME = GKValidator;
+				PRODUCT_NAME = GKValidator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		03FC3C838F7B24B02F88CB4D0EF5870D /* Build configuration list for PBXNativeTarget "Pods-GKValidator_Tests" */ = {
+		09797C3026B86E40B2DFE19E5DD7D761 /* Build configuration list for PBXNativeTarget "GKValidator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6AB4E1DB858DE414F7EEBD6FDA59CC38 /* Debug */,
-				F0BCCCD4E0C14F36DB559F8945D2D507 /* Release */,
+				EE4D2A51B6074EB1A73E466BBB812F87 /* Debug */,
+				751B7AF7C2FDA8163BAD2EE951C41395 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		161B7C8A5A13FEA31EF8ED2EAC9C39C2 /* Build configuration list for PBXNativeTarget "Pods-GKValidator_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
-				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
+				3D1DE098ADF85B1F0139BF4A29184362 /* Debug */,
+				06AFD51949A54B01185C74242520F48B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		615C7EB5A8AFA6411BBB2506D82BBF9F /* Build configuration list for PBXNativeTarget "Pods-GKValidator_Example" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3F8A40B23F0EBFA67C0597D61B8C873E /* Debug */,
-				1D3A47E9A8D036E9A6C7167222743E52 /* Release */,
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A9F15E615F433EBCADB00C9F40E14A39 /* Build configuration list for PBXNativeTarget "GKValidator" */ = {
+		536A28C4BD2F03D298D5CF74B689D6A4 /* Build configuration list for PBXNativeTarget "Pods-GKValidator_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3609E09CC50A193DD0995DE6EFAC15A0 /* Debug */,
-				12FE025476A30F00F12444E0B07168AF /* Release */,
+				5CBC2B8700A2C272528A319155052799 /* Debug */,
+				B59D2532F664A854441BD0FE229F222E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
