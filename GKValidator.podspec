@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author         	= { "Göksel Köksal" => "gokselkoksal@gmail.com" }
   s.social_media_url = "http://twitter.com/gokselkk"
   s.platform     	= :ios, "12.0"
-  s.source       	= { :git => "https://github.com/gokselkoksal/GKValidator.git", :tag => "v2.0.0" }
+  s.source       	= { :git => "https://github.com/gokselkoksal/GKValidator.git", :tag => "v3.0.0" }
   s.source_files  	= "Pod/Classes/Core/**/*.{swift}"
   s.swift_version   = "5.0"
 end
