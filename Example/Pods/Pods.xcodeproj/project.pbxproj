@@ -45,10 +45,10 @@
 
 /* Begin PBXFileReference section */
 		09AA53F6083C625C96879B553099C5EB /* Pods-GKValidator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GKValidator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		130B36697FEB65C3D2F647C4415F3107 /* GKValidator */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = GKValidator; path = GKValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		130B36697FEB65C3D2F647C4415F3107 /* GKValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GKValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C2B6CB766E6FFFC31E47ED0BF70F411 /* Pods-GKValidator_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-GKValidator_Example.modulemap"; sourceTree = "<group>"; };
 		1C979CDD9D9E9FE2B36CD8A5813578C4 /* Pods-GKValidator_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GKValidator_Tests-umbrella.h"; sourceTree = "<group>"; };
-		21972C8ADCDDE11412C66BBB57D99C7B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		21972C8ADCDDE11412C66BBB57D99C7B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		247A87ABABD89A0506718A82C1F47DA7 /* GKValidator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GKValidator-prefix.pch"; sourceTree = "<group>"; };
 		2A16E66D7DBD4227F33A6D1FA0A8ABF0 /* FieldValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FieldValidator.swift; sourceTree = "<group>"; };
 		2AD3E597E238DCCAA0E517455BBD2EE2 /* Pods-GKValidator_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GKValidator_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		61570238A3F5E342B990A10124BA9AFC /* Pods-GKValidator_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GKValidator_Example"; path = Pods_GKValidator_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		658D5ECB2C70B5DE8DDF685815692F7A /* ValidationCommons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationCommons.swift; path = Pod/Classes/Core/ValidationCommons.swift; sourceTree = "<group>"; };
 		668153864D1CEF49F015FA35F014FE25 /* Pods-GKValidator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKValidator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6820A4EA396F4E00F5634C0E45CEC4F5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6820A4EA396F4E00F5634C0E45CEC4F5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		6C2A64F6CC05BA991A12EA8CEA9FD922 /* Pods-GKValidator_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GKValidator_Example-umbrella.h"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7B154C8A77078C9C428AD03B27C5901F /* Pods-GKValidator_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GKValidator_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -70,12 +70,12 @@
 		80C89396FAE8514B325C3DA6CE518930 /* Pods-GKValidator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKValidator_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8469EDB682E8593F4E7DA04043269087 /* ValidationRule+String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "ValidationRule+String.swift"; sourceTree = "<group>"; };
 		8924FFC4A69307EBC55660C6548662C9 /* Pods-GKValidator_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GKValidator_Example-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F449337F511D4C3E2AE4642415A6F83 /* ValidationRuleSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ValidationRuleSet.swift; sourceTree = "<group>"; };
 		AC5FDFE44A2AF722CAFC7B29352D0497 /* Pods-GKValidator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GKValidator_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B614F17318F7597C40787C74A5A61C90 /* GKValidator-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GKValidator-umbrella.h"; sourceTree = "<group>"; };
 		B8AB4C91699D2D839A303B2AA892D0F1 /* GKValidator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GKValidator-dummy.m"; sourceTree = "<group>"; };
-		B8E33933EACBA1AF01BE8B59189C3E14 /* GKValidator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = GKValidator.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B8E33933EACBA1AF01BE8B59189C3E14 /* GKValidator.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = GKValidator.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C4DDD624C38EE2D7925309A506AC1204 /* Pods-GKValidator_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-GKValidator_Tests"; path = Pods_GKValidator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAF8E5EA0C54F239B355CCD9635F07F0 /* Pods-GKValidator_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GKValidator_Tests-Info.plist"; sourceTree = "<group>"; };
 		CC7448BBB7E4DEEFBD685EEDC7FB35FF /* Pods-GKValidator_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GKValidator_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -257,7 +257,7 @@
 		F18A61B5D26AC19D81ACDFD8AD6534AD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				130B36697FEB65C3D2F647C4415F3107 /* GKValidator */,
+				130B36697FEB65C3D2F647C4415F3107 /* GKValidator.framework */,
 				61570238A3F5E342B990A10124BA9AFC /* Pods-GKValidator_Example */,
 				C4DDD624C38EE2D7925309A506AC1204 /* Pods-GKValidator_Tests */,
 			);
@@ -328,7 +328,7 @@
 			);
 			name = GKValidator;
 			productName = GKValidator;
-			productReference = 130B36697FEB65C3D2F647C4415F3107 /* GKValidator */;
+			productReference = 130B36697FEB65C3D2F647C4415F3107 /* GKValidator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B086287FE32D07C09DA8EE83639FAB74 /* Pods-GKValidator_Example */ = {
@@ -632,7 +632,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/GKValidator/GKValidator-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GKValidator/GKValidator-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GKValidator/GKValidator.modulemap";
 				PRODUCT_MODULE_NAME = GKValidator;
@@ -736,8 +736,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -758,7 +757,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/GKValidator/GKValidator-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/GKValidator/GKValidator-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/GKValidator/GKValidator.modulemap";
 				PRODUCT_MODULE_NAME = GKValidator;
