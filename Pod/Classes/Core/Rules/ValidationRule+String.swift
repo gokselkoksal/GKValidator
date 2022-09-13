@@ -16,7 +16,7 @@ public extension ValidationRule where ValidatableType: CustomStringConvertible {
         - error: Error to return upon failure.
         - minLength: Minimum length of the string.
      */
-    public init(minLength: UInt, error: Error? = nil) {
+    init(minLength: UInt, error: Error? = nil) {
         self.init(handler: { value in
             let condition = value.description.count >= Int(minLength)
             return ValidationResult(condition: condition, error: error)
@@ -29,7 +29,7 @@ public extension ValidationRule where ValidatableType: CustomStringConvertible {
         - error: Error to return upon failure.
         - maxLength: Maximum length of the string.
      */
-    public init(maxLength: UInt, error: Error? = nil) {
+    init(maxLength: UInt, error: Error? = nil) {
         self.init(handler: { value in
             let condition = value.description.count <= Int(maxLength)
             return ValidationResult(condition: condition, error: error)
@@ -42,7 +42,7 @@ public extension ValidationRule where ValidatableType: CustomStringConvertible {
         - error: Error to return upon failure.
         - maxLength: Character set to match.
      */
-    public init(characterSet: CharacterSet, error: Error? = nil) {
+    init(characterSet: CharacterSet, error: Error? = nil) {
         self.init(handler: { value in
             let trimmedString = value.description.trimmingCharacters(in: characterSet)
             let condition = (trimmedString.count == 0)

@@ -64,7 +64,7 @@ public enum ValidationResult {
 
 public extension ValidationResult {
     
-    public var isSuccess: Bool {
+    var isSuccess: Bool {
         switch self {
         case .success:
             return true
@@ -73,7 +73,7 @@ public extension ValidationResult {
         }
     }
     
-    public var errors: [Error]? {
+    var errors: [Error]? {
         switch self {
         case .failure(let resultingErrors):
             return resultingErrors
@@ -82,7 +82,7 @@ public extension ValidationResult {
         }
     }
     
-    public init(condition: Bool, error: Error? = nil) {
+    init(condition: Bool, error: Error? = nil) {
         if condition {
             self = .success
         } else {
