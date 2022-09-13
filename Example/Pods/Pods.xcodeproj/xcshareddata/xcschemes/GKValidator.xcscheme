@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AEFE8CDC8EECA71F3EB36CAA6A5E8D6F"
+               BlueprintIdentifier = "51509865C4F13DE5EEF05415994E1402"
                BuildableName = "GKValidator.framework"
                BlueprintName = "GKValidator"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -43,7 +43,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AEFE8CDC8EECA71F3EB36CAA6A5E8D6F"
+            BlueprintIdentifier = "51509865C4F13DE5EEF05415994E1402"
             BuildableName = "GKValidator.framework"
             BlueprintName = "GKValidator"
             ReferencedContainer = "container:Pods.xcodeproj">
